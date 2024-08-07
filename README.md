@@ -1,5 +1,13 @@
-## Hi there 👋
+## Hi there 👋 My name is Sean! Nice to meet you
 
+<p align = "center">
+I'm from Taiwan. And now im a THU (Taung Hai Uninversity) strudent. My major is CS.
+
+
+</p>
+
+| [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=kirbeee)](https://github.com/anuraghazra/github-readme-stats) | ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&layout=compact)|
+|:-------:|:-------:|
 <!--
 **kirbeee/kirbeee** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
