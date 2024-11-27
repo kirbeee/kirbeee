@@ -17,11 +17,11 @@ jobs:
           node-version: 18 # Use Node.js 18 here
 
       - name: Install dependencies
-        working-directory: ./kirbeee-website
+        working-directory: /kirbeee-website
         run: npm install
 
       - name: Build site
-        working-directory: ./kirbeee-website
+        working-directory: /kirbeee-website
         run: npm run build
 
       - name: Deploy to GitHub Pages
