@@ -13,14 +13,14 @@ const config: Config = {
   url: 'https://kirbeee.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: 'kirbeee/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'kirbeee', // Usually your GitHub org/user name.
-  projectName: 'kirbeee.github.io', // Usually your repo name.
+  projectName: 'kirbeee', // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: 'main',
+  deploymentBranch: "gh-pages",
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
