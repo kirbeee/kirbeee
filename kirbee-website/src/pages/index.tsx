@@ -13,14 +13,17 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+          Welcome to Sean website
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+            Hi, I’m Sean,form Taiwan 🇹🇼, a senior Computer Science student at Tunghai University🎓.
+            I am passionate about exploring the fields of Software Engineering and Machine Learning, driven by a strong interest in using technology to solve real-world problems.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/cv">
+            My CV 👨🏼‍💻
           </Link>
         </div>
       </div>
