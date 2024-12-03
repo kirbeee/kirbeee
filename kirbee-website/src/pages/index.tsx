@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import Translate, {translate} from "@docusaurus/core/lib/client/exports/Translate";
 
 import styles from './index.module.css';
 
@@ -13,11 +14,15 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <Heading as="h1" className="hero__title">
-          Welcome to Sean website
+            <Translate>Welcome to Sean website</Translate>
         </Heading>
+
         <p className="hero__subtitle">
+            <Translate
+                id="homepage.header.subtitle">
             Hi, I’m Sean,form Taiwan 🇹🇼, a senior Computer Science student at Tunghai University🎓.
             I am passionate about exploring the fields of Software Engineering and Machine Learning, driven by a strong interest in using technology to solve real-world problems.
+            </Translate>
         </p>
         <div className={styles.buttons}>
           <Link

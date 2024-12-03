@@ -28,9 +28,19 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en','zh-TW'],
+    localeConfigs: {
+        en: {
+            label: 'English',
+        },
+        'zh-TW': {
+            label: '繁體中文',
+            path: 'zh-TW',
+        },
+    }
   },
 
   presets: [
@@ -67,8 +77,9 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
+    // TODO: Add my own logo
     image: 'img/docusaurus-social-card.jpg',
+
     navbar: {
       title: 'Sean\'s website',
       logo: {
@@ -84,8 +95,12 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/kirbeee',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'localeDropdown',
           position: 'right',
         },
       ],
