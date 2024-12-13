@@ -18,11 +18,6 @@ function HomepageHeader() {
         </Heading>
 
         <p className="hero__subtitle">
-            <Translate
-                id="homepage.header.subtitle">
-            Hi, I’m Sean,form Taiwan 🇹🇼, a senior Computer Science student at Tunghai University🎓.
-            I am passionate about exploring the fields of Software Engineering and Machine Learning, driven by a strong interest in using technology to solve real-world problems.
-            </Translate>
         </p>
         <div className={styles.buttons}>
           <Link
