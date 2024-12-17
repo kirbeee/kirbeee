@@ -2,26 +2,44 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kirbeee.github.io/kirbeee/blog</id>
     <title>Sean website Blog</title>
-    <updated>2024-11-10T00:00:00.000Z</updated>
+    <updated>2024-12-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kirbeee.github.io/kirbeee/blog"/>
     <subtitle>Sean website Blog</subtitle>
     <icon>https://kirbeee.github.io/kirbeee/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[What is your dream? What do you want to do in the future?]]></title>
+        <id>https://kirbeee.github.io/kirbeee/blog/2024/12/16/2024-12-16</id>
+        <link href="https://kirbeee.github.io/kirbeee/blog/2024/12/16/2024-12-16"/>
+        <updated>2024-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[As a university student, I hope to become a scientist who can help make the world a better place.]]></summary>
+        <content type="html"><![CDATA[<p>As a university student, I hope to become a scientist who can help make the world a better place.</p>
+<p>I am currently studying Computer Science in university. From a young age, I’ve had a deep love for computers. My earliest memories of computers involve playing games with my family. After school, I often sat at the computer desk with my brother, playing Monopoly, a game similar to a board game. I also spent a lot of time surfing the internet. Although internet speeds back then were slow, many of my “firsts” happened on that old computer—my first time using social media, my first time searching on Google, and so on. These experiences made me curious about how computers and the digital world are built.</p>
+<p>In high school, I started learning programming by myself. At the time, none of my family members worked in this field, but with the help of online tutorials and open courses, I gradually gained a foundational understanding of the world of computing. I even started participating in programming competitions. Although I performed poorly in the competitions, I learned a lot through those experiences. The most important lesson I gained during that time was learning to grow from repeated mistakes.</p>
+<p>During my time in university, I began reflecting on life’s meaning and purpose. I spent a lot of time reading books on existentialism and nihilism, which prompted me to engage in deep introspection. Then, by chance, I came across the Nobel Prize in Biology, which was awarded to scientists for their work in predicting protein structures. At that moment, I realized something important: I had learned so many tools, and perhaps it was time for me to become a creator of tools.</p>
+<p>My goal is to become a scientist who contributes to humanity—one of the many individuals working to help the world move forward.</p>]]></content>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[An Unforgettable Journey to the Summit of Yushan]]></title>
         <id>https://kirbeee.github.io/kirbeee/blog/2024/11/10/2024-11-10</id>
         <link href="https://kirbeee.github.io/kirbeee/blog/2024/11/10/2024-11-10"/>
         <updated>2024-11-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[test]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/kirbeee/assets/images/IMG_1046-c047f8b0d1aed723a2db36712756b640.jpeg" width="4032" height="3024" class="img_ev3q"></p>
-<!-- -->
-<p>This weekend, I went hiking on Yushan with my university classmates. During the two-day, one-night journey, I will never forget the breathtaking view from the summit of Yushan Main Peak.</p>
+        <summary type="html"><![CDATA[This weekend, I went hiking on Yushan with my university classmates. During the two-day, one-night journey, I will never forget the breathtaking view from the summit of Yushan Main Peak.]]></summary>
+        <content type="html"><![CDATA[<p>This weekend, I went hiking on Yushan with my university classmates. During the two-day, one-night journey, I will never forget the breathtaking view from the summit of Yushan Main Peak.</p>
+<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/kirbeee/assets/images/IMG_1046-c047f8b0d1aed723a2db36712756b640.jpeg" width="4032" height="3024" class="img_ev3q"></p>
 <p>On Saturday afternoon, we rented a car together and drove to the mountain hut where we were to stay for the first night. Along the way, we stopped at convenience stores to buy food and supplies for the two days. The journey was filled with laughter as we drove while listening to music and enjoying the beautiful sunset scenery. By the time we arrived at our destination, it was already evening. We gathered in the mountain hut to enjoy the dinner we had bought earlier. After the meal, we decided to go out for a walk.</p>
 <p>The moment we opened the door, a gust of cold wind rushed towards us. Out of curiosity, we ventured a short distance despite the chill. Just as we were about to head back to the hut, one of my friends exclaimed, “Look up!” That’s when I noticed the sky filled with countless stars, a sight I had never seen before. I was so excited that I hurried to capture the scene with my phone. It felt like the stars were blessing us for a successful climb the next day!</p>
 <p>The following day, we woke up at 3 a.m., changed into our gear, and began our summit attempt. At that time, it was still dark, and we relied on our headlamps to illuminate the path. Along the way, we spotted some of Taiwan’s endemic species, which we assumed were Formosan muntjacs. Although we weren’t entirely sure, it was both surprising and delightful to see them. As the sun gradually rose, it illuminated the entire valley.</p>
 <p>We were fortunate to have perfect weather that day—no wind, no rain—which felt like a gift from above. As we ascended, the vegetation around us gradually transitioned from broadleaf forests to coniferous trees. We speculated that these might be Taiwan firs or Taiwan cypresses.</p>
 <p>Throughout the hike, we were mindful of our timing. After persistent effort, we reached the summit around 11 a.m.! The final stretch was nothing short of grueling. The steep, zigzagging trail, combined with the thin air, made every step feel like a challenge. At times, we had to use our hands to climb. I am truly grateful for the excellent weather that day; if it had been windy or rainy, we likely wouldn’t have made it.</p>
 <p>Standing on the main peak of Yushan brought an indescribable sense of emotion. This was my first climb of one of Taiwan’s Hundred Peaks, and I am determined to continue conquering Taiwan’s mountains with my own two feet!</p>]]></content>
-        <category label="Hello" term="Hello"/>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
     </entry>
 </feed>

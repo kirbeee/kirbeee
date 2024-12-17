@@ -2,21 +2,34 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kirbeee.github.io/kirbeee/zh-TW/blog</id>
     <title>Sean website Blog</title>
-    <updated>2024-11-10T00:00:00.000Z</updated>
+    <updated>2024-12-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kirbeee.github.io/kirbeee/zh-TW/blog"/>
     <subtitle>Sean website Blog</subtitle>
     <icon>https://kirbeee.github.io/kirbeee/zh-TW/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[What is your dream? What do you want to do in the future?]]></title>
+        <id>https://kirbeee.github.io/kirbeee/zh-TW/blog/2024/12/16/2024-12-16</id>
+        <link href="https://kirbeee.github.io/kirbeee/zh-TW/blog/2024/12/16/2024-12-16"/>
+        <updated>2024-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[身為一位大學生，我希望我能成為一位幫助世界的科學家。]]></summary>
+        <content type="html"><![CDATA[<p>身為一位大學生，我希望我能成為一位幫助世界的科學家。</p>
+<p>大學我讀的是資訊工程系，從小就很喜歡電腦，在小時侯對電腦的印象是與家人一起玩遊戲的時光，我常常下課就跟我哥，坐在電腦桌前玩大富翁，那是一款很像桌遊的遊戲，此外也常常用電腦上網，當時的網路速度雖然不快，但許多的第一次都是在那台老舊的電腦上，第一次的上社群平台，第一次的用google，等等的，也因為這樣我開始好奇電腦的這些內容是怎麼構成的，高中我開始自己學習寫程式，當是我身邊沒有一個家人是從事這方面相關的工作，但憑藉著網路上的教學影片，開放式課程我慢慢對資訊世界有了初步的認識，也開始參加寫程式的比賽，再一次次的比賽中，雖然成績都很不好，但我也因此成長很多再一次次的錯誤中成長是當時的我學習到最重要的事情。</p>
+<p>大學時開始思考了許多的事情，像是活這的意義、以及閱讀許多書籍虛無主義，存在主義的書，也因為這樣花大量的時間在與自己對華。再一次偶然的機會，看到諾貝爾獎生物組的得主是頒發給研究預測蛋白質構造，此時的我領悟到，我學習到這麼多工具，或許應該換我成為製造工具的人！成爲幫助世界的眾多科學家的一份子～</p>]]></content>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[An Unforgettable Journey to the Summit of Yushan]]></title>
         <id>https://kirbeee.github.io/kirbeee/zh-TW/blog/2024/11/10/2024-11-10</id>
         <link href="https://kirbeee.github.io/kirbeee/zh-TW/blog/2024/11/10/2024-11-10"/>
         <updated>2024-11-10T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[test]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/kirbeee/zh-TW/assets/images/IMG_1046-c047f8b0d1aed723a2db36712756b640.jpeg" width="4032" height="3024" class="img_ev3q"></p>
-<!-- -->
-<p>這個週末我與大學同學去爬玉山。在兩天一夜的旅程中，我永遠無法忘記站在玉山主峰放眼望去的美景。</p>
-<p>週六下午我們就一起租了一台汽車，開往我們第一天要睡覺的山屋。我們在沿路的便利商店買了我們兩天要吃的食物與乾糧，一群人開開心心的邊開邊聽歌，沿路也看到美麗的晚霞。到目的地時已經晚上了，我們就一起在山屋裡吃著剛剛在便利商店買的晚餐。吃飽後想說出去走走。一打開門，就有陣陣寒風朝我們襲來，我們因為好奇，還是隨意走了一段路，正想要回去山屋時，朋友突然說：「你抬頭看一下！」才發先天空滿滿的星星，這是我從來沒看過的景色，我超級興奮，急忙地用手機拍下那景色。或許也是在祝福我們明天的登頂成功！</p>
+        <summary type="html"><![CDATA[這個週末我與大學同學去爬玉山。在兩天一夜的旅程中，我永遠無法忘記站在玉山主峰放眼望去的美景。]]></summary>
+        <content type="html"><![CDATA[<p>這個週末我與大學同學去爬玉山。在兩天一夜的旅程中，我永遠無法忘記站在玉山主峰放眼望去的美景。</p>
+<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/kirbeee/zh-TW/assets/images/IMG_1046-c047f8b0d1aed723a2db36712756b640.jpeg" width="4032" height="3024" class="img_ev3q">
+週六下午我們就一起租了一台汽車，開往我們第一天要睡覺的山屋。我們在沿路的便利商店買了我們兩天要吃的食物與乾糧，一群人開開心心的邊開邊聽歌，沿路也看到美麗的晚霞。到目的地時已經晚上了，我們就一起在山屋裡吃著剛剛在便利商店買的晚餐。吃飽後想說出去走走。一打開門，就有陣陣寒風朝我們襲來，我們因為好奇，還是隨意走了一段路，正想要回去山屋時，朋友突然說：「你抬頭看一下！」才發先天空滿滿的星星，這是我從來沒看過的景色，我超級興奮，急忙地用手機拍下那景色。或許也是在祝福我們明天的登頂成功！</p>
 <p>隔天我們凌晨三點起床，換好裝備後就開始我們單攻的旅程，當時天色都還沒亮，只用我們的頭燈去照亮道路，前途看到一些台灣的特有種。應該是台灣山羌吧！我們也不確定，但確實是有驚又喜。太陽也慢慢露出，照亮片個山谷。當天運氣十分好是無風無雨的天氣，簡直是上天給我們的恩賜，隨著高度提高，伴隨在我們身邊的植物也從闊葉林慢慢變成針葉林，當應該是台灣冷衫，或是台灣扁柏吧！</p>
 <p>在路上我們十分注意自己的時間，再不懈的努力下，我們在中午11點左右登頂了！最後一段路只能用地獄來形容。之字形的上坡加上稀薄的空氣，每走一步都感覺心跳跳得好快，也有需要雙手並用的時候。真的很感謝當時有那麼好的天氣，我想如果風很大或下雨我們一定無法登頂。站在玉山主峰有一種無法用言語表達的感動，這是我的第一座台灣百岳今後我還會繼續用我的雙腳征服台灣的高山們的！</p>]]></content>
         <category label="Hello" term="Hello"/>
