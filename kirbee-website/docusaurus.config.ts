@@ -7,7 +7,7 @@ import 'dotenv/config'
 
 const config: Config = {
   title: 'Sean website',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Computer Science student at the University, sharing my thoughts and projects',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -72,6 +72,10 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        gtag: {
+          trackingID: 'G-QYDJFN4WVD',
+          anonymizeIP: true,
+        }
       } satisfies Preset.Options,
     ],
   ],
@@ -82,6 +86,12 @@ const config: Config = {
   themeConfig: {
     // TODO: Add my own logo
     image: 'img/docusaurus-social-card.jpg',
+    // Declare some <meta> tags
+    metadata: [
+      {name: 'keywords', content: 'cooking, blog'},
+      {name: 'twitter:card', content: 'summary_large_image'},
+    ],
+
     algolia: {
       // The application ID provided by Algolia
       appId: process.env.REACT_APP_ALGOLIA_APP_ID,
@@ -144,6 +154,30 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  headTags: [
+    // Declare a <link> preconnect tag
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://example.com',
+      },
+    },
+    // Declare some json-ld structured data
+    {
+      tagName: 'script',
+      attributes: {
+        type: 'application/ld+json',
+      },
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org/',
+        '@type': 'Organization',
+        name: 'Meta Open Source',
+        url: 'https://opensource.fb.com/',
+        logo: 'https://opensource.fb.com/img/logos/Meta-Open-Source.svg',
+      }),
+    },
+      ]
 };
 
 export default config;
