@@ -132,6 +132,7 @@ const config: Config = {
       },
       items: [
         {to: '/docs', label: 'Docs', position: 'left'},
+        {to: '/docs/project', label: 'Project', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/kirbeee',

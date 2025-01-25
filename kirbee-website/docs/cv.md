@@ -1,3 +1,6 @@
+---
+title: About Me
+---
 # Sean Lin
 
 **Phone:** (+886) 988 057 738  
