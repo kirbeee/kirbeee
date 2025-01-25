@@ -131,7 +131,7 @@ const config: Config = {
         src: 'img/logo.svg',
       },
       items: [
-        {to: '/docs/cv', label: 'CV', position: 'left'},
+        {to: '/docs', label: 'Docs', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/kirbeee',
