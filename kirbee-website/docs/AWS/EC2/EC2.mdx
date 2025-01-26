@@ -159,12 +159,39 @@ author: Kirbee
 - Manage **IAM Roles** and user permissions.
 - Secure data on EC2 instances.
 
+### Shared Responsibility Storage
+### AWS Responsibilities:
+- Infrastructure
+- Replication for data for EBS volumes & EFS drives
+- Replacing faulty hardware
+- Ensuring their employees cannot access your data
+### User Responsibilities:
+- Setting up backup / snapshot procedures
+- Setting up data encryption
+- Responsibility of any data on the drives
+- Understanding the risk of using EC2 Instance Store
+
 ---
 
 ## Summary
 ### EC2 Components:
 - **Users manage:** Instance type, configuration, and security.
 - **AWS manages:** Infrastructure, host isolation, and compliance.
+
+### EC2 Storage:
+EBS volumes:
+- network drives attached to one EC2 instance at a time
+- Mapped to an Availability Zones
+- Can use EBS Snapshots for backups / transferring EBS volumes across AZ
+- AMI: create ready-to-use EC2 instances with our customizations
+- EC2 Image Builder: automatically build, test and distribute AMls
+- EC2 Instance Store:
+High performance hardware disk attached to our EC2 instance
+- Lost if our instance is stopped / terminated
+- EFS: network file system, can be attached to 100s of instances in a region
+- EFS-IA: cost-optimized storage class for infrequent accessed files
+- FSx for Windows: Network File System for Windows servers
+- FSx for Lustre: High Performance Computing Linux file
 
 ### Key Features:
 - **Instance Variety:** Optimized for compute, memory, or storage.
