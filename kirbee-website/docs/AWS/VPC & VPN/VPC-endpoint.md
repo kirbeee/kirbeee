@@ -1,5 +1,5 @@
 ---
-title: VPC endpoint
+title: VPC & VPN endpoint
 ---
 
 # VPC Endpoint

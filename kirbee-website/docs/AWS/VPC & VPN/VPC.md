@@ -1,5 +1,5 @@
 ---
-title: VPC (Virtual Private Cloud)
+title: VPC & VPN (Virtual Private Cloud)
 ---
 # VPC (Virtual Private Cloud)
 ![VPC](./VPC.png)

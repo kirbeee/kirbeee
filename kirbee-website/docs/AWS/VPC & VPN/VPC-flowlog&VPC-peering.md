@@ -1,5 +1,5 @@
 ---
-title: VPC Flow Logs & VPC Peering
+title: VPC & VPN Flow Logs & VPC & VPN Peering
 ---
 # VPC Flow Logs 
 - Capture information about IP traffic going into your interfaces:
