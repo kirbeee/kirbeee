@@ -1,18 +1,22 @@
 {
   "title": {
-    "message": "Sean's website",
+    "message": "ショーンのウェブサイト",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "My Site Logo",
+    "message": "マイサイトロゴ",
     "description": "The alt text of navbar logo"
   },
-  "item.label.CV": {
-    "message": "CV",
-    "description": "Navbar item with label CV"
+  "item.label.Docs": {
+    "message": "ドキュメント",
+    "description": "Navbar item with label Docs"
+  },
+  "item.label.Project": {
+    "message": "プロジェクト",
+    "description": "Navbar item with label Project"
   },
   "item.label.Blog": {
-    "message": "Blog",
+    "message": "ブログ",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {

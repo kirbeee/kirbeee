@@ -1,11 +1,11 @@
 ---
-id: intro
-title: Introduction to Documentation
+id: 介绍者
+title: 文档介绍
 slug: /
 ---
 
-# Welcome to the Documentation
+# 欢迎使用文档
 
-This is the starting point of the documentation. Here you can find tutorials, advanced guides, and references for this project.
+这是文件的出发点。 在这里您可以找到该项目的教程、高级指南和参考。
 
-## Sections
+## 班级

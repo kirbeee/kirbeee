@@ -1,50 +1,58 @@
 ---
-title: About Me
+title: 关于我
 ---
+
 # Sean Lin
 
-**Phone:** (+886) 988 057 738  
-**Email:** pspsean1234@gmail.com  
-**Address:** Taipei
+**Phone:** (+886) 988 057 738\
+**电邮:** pspsean1234@gmail.com\
+**地址:** Taipei
 
 ---
 
-## Professional Summary
-Driven by a passion for quality and innovation, I excelled as a Software Engineering Intern at ZK Software in Taipei, enhancing project quality through leading TestCafe end-to-end testing and pioneering component testing with Vue 3 and Vitest. My expertise spans HTML, front-end frameworks, and a proven ability in debugging and collaborative problem-solving.
+## 专业摘要
+
+出于对质量和创新的激情，我在台北ZK软件上作为软件工程实习生而优秀。 通过 TestCafe 端到端测试和带有Vue 3 和 Vitets 的开创性组件测试来提高项目质量。 我的专门知识涉及HTML、前端框架以及已证明的调试和协作解决问题的能力。
 
 ---
 
-## Professional Experience
+## 专业经验
 
-### Software Engineering Intern
-**ZK Software, Taipei**  
-_Aug 2024 - Oct 2024_
-- **Optimizing TestCafe Project:** Led the implementation of end-to-end testing with TestCafe, ensuring the accurate delivery of core functionalities.
-- **Component Testing with Vue 3 and Vitest:** Successfully tested Vue 3 components and contributed to project quality assurance efforts using Vitest.
+### 软件工程实习员
 
----
+**ZK 软盘，台北**\
+_Ag 2024 - 2024年10月_
 
-## Education
-
-### Tunghai University
-**Bachelor of Science (B.S.) Computer Science Candidate**  
-(Expected graduation Jul 2025)
+- **优化测试咖啡厅项目：** 以测试咖啡厅牵头实施端到端测试，确保准确交付核心功能。
+- **组件测试使用 Vue 3 和 Vitest:** 测试成功的 Vue 3 组件，并有助于使用 Vitest进行项目质量保证工作。
 
 ---
 
-## Languages
-- **English:** Level B2
-- **Japanese:** N4
+## 教育
+
+### 通盖大学
+
+**科学学士（B.S.） 计算机科学候选人**\
+(预期毕业于2025年)
 
 ---
 
-## Skills
-- Front-end frameworks
-- Debugging
+## 语文
+
+- **英文：** 级 B2
+- **日语：** N4
+
+---
+
+## 技能
+
+- 前端框架
+- 调试
 - Git
 
 ---
 
-## Hobbies and Interests
-- Passionate about traveling and discovering new cultures. I have visited over 15 different countries and enjoy exploring new places to broaden my horizons.
-- Passionate about reading, especially books on business, psychology, personal development, and travel.
+## 兴趣与爱好
+
+- 激发对旅行和发现新文化的热情。 我访问了15多个不同的国家，享受探索新的场所以扩大我的视野。
+- 热心阅读，特别是关于商业、心理学、个人发展和旅行的书籍。
