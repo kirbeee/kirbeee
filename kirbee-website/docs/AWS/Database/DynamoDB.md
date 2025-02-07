@@ -18,7 +18,7 @@ title: DynamoDB (NoSQL Database)
 ![DynamicDBDataTypes](./DynamoDB-datatype.png)
 
 # DynamoDB Accelerator - DAX
-!(DynamoDB-Accelerator)[./DynamoDB-Accelerator.png]
+![DynamoDB-Accelerator](./DynamoDB-Accelerator.png)
 - Fully Managed in-memory cache for DynamoDB
 - 10x performance improvement - single-digit millisecond latency to microseconds latency - when accessing your DynamoDB tables
 - Secure, highly scalable & highly available
