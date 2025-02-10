@@ -34,7 +34,7 @@ _Aug 2024 - Oct 2024_
 
 ## Languages
 - **English:** Level B2
-- **Japanese:** N4
+- **Japanese:** N3
 
 ---
 
