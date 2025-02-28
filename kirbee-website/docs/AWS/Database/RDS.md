@@ -1,7 +1,7 @@
 ---
 title: RDS (Relational Database Service)
 ---
-![RDS](./RDS.png)
+
 # Introduction
 - RDS stands for Relational Database Service
 - It's a managed DB service for DB use SQL as a query language.
@@ -13,43 +13,50 @@ title: RDS (Relational Database Service)
 - Microsoft SQL Server
 - IBM DB2
 - Aurora (AWS Proprietary database)
+![RDS](./RDS.png)
 
 # Benefits
 - RDS is a managed service:
-- Automated provisioning, OS patching
-- Continuous backups and restore to specific timestamp (Point in Time Restore)!
-- Monitoring dashboards
-- Read replicas for improved read performance
-- Multi AZ setup for DR (Disaster Recovery)
-- Maintenance windows for upgrades
-- Scaling capability (vertical and horizontal)
-- Storage backed by EBS
+  - Automated provisioning, OS patching
+  - Continuous backups and restore to specific timestamp (Point in Time Restore)!
+  - Monitoring dashboards
+  - Read replicas for improved read performance
+  - Multi AZ setup for DR (Disaster Recovery)
+  - Maintenance windows for upgrades
+  - Scaling capability (vertical and horizontal)
+  - Storage backed by EBS
 - BUT you can't SSH into your instances
 
-# Amazon Aurora
-![Aurora](./Aurora.png)
-- Aurora is a proprietary technology from AWS (not open sourced)
-- PostgreSQL and MySQL are both supported as Aurora DB
-- Aurora is "AWS cloud optimized" and claims 5x performance improvement over MySQL on RDS, over 3x the performance of Postgres on RDS
-- Aurora storage automatically grows in increments of IOGB, up to 128 TB
-- Aurora costs more than RDS (20% more) - but is more efficient
-- Not in the free tier
-
-# Amazon Aurora Serverless
-![AuroraServerless](./Aurora-Serverless.png)
-- Automated database instantiation and auto-scaling based on actual usage
-- PostgreSQL and MySQL are both supported as Aurora Serverless DB
-- No capacity planning needed
-- Least management overhead
-- Pay per second, can be more cost-effective
-- Use cases: good for infrequent, intermittent or unpredictable workloads...
+# RDS Storage Auto Scaling - 
+- Helps you increase storage on your RDS DB instance dynamically
+- When RDS detects you are ru
+- Avoid manually scaling your database storage
+- You have to set Maximum Storage Threshold (maximum limit for DB storage)
+- Automatically modify storage if:
+- Free storage is less than 10% of allocated storage
+- Low-storage lasts at least 5 minutes
+- 6 hours have passed since last modification
+- Useful for applications with unpredictable workloads
+- Supports all RDS database engines
+![img.png](RDS-auto-scaling.png)
 
 # RDS Deployment
 ## RDS Read Replicas
 ![RDSReadReplicas](./Read-Replica.png)
-- Scale the read workload of your DB
-- Can create up to 15 Read Replicas
-- Data is only written to the main DB
+- Up to 15 Read Replicas
+- Within AZ, Cross AZ or Cross Region
+- Replication is ASYNC, so reads are eventually consistent
+### Use cases:
+- You have a production database that is taking on normal load
+- You want to run a reporting application to run some analytics
+- You create a Read Replica to run the new workload there
+- The production application is unaffected
+- Read replicas are used for SELECT(=read) only kind of statements(not INSERT, UPDATE, DELETE)
+![img.png](read-replicas.png)
+### Network cost:
+- In AWS there’s a network cost when data goes from one AZ to another
+- For RDS Read Replicas within the same region, you don’t pay that fee
+![img.png](Network-cost.png)
 
 ## RDS Multi-AZ (Disaster Recovery)
 ![RDSMultiAZ](./Multi-AZ.png)
@@ -62,3 +69,12 @@ title: RDS (Relational Database Service)
 - Disaster recovery in case of region issue
 - Local performance for global reads
 - Replication cost
+
+### RDS From Single AZ to Multi-AZ
+![img.png](RDS-detail.png)
+- Zero downtime operation (no need to stop the DB)
+- Just click on “modify” for the database
+- The following happens internally:
+  - A snapshot is taken
+  - A new DB is restored from the snapshot in a new AZ
+  - Synchronization is established between the two databases
