@@ -47,17 +47,17 @@ Structure: Role, Group, User
 ```
 
 ## Password Policies
-• Strong passwords = higher security for your account
-• In AWS, you can setup a password policy:
-    • Set a minimum password length
-    • Require specific character types:
-        • including uppercase letters
-        • lowercase letters
-        • numbers
-        • non-alphanumeric characters
-    • Allow all IAM users to change their own passwords
-    • Require users to change their password after some time (password expiration)
-    • Prevent password re-use
+- Strong passwords = higher security for your account
+- In AWS, you can setup a password policy:
+    - Set a minimum password length
+    - Require specific character types:
+        - including uppercase letters
+        - lowercase letters
+        - numbers
+        - non-alphanumeric characters
+    - Allow all IAM users to change their own passwords
+    - Require users to change their password after some time (password expiration)
+    - Prevent password re-use
 
 ## MFA (Multi-Factor Authentication)
 - Users have access to your account and can possibly change configurations or delete resources in your AWS account
@@ -76,12 +76,12 @@ Structure: Role, Group, User
     - AWS Software Developer Kit (SDK) - for code: protected by access
 
 ## Roles
-• Some AWS service will need to perform actions on your behalf
-• To do so, we will assign permissions to AWS services with IAM Roles
-• Common roles:
-    • EC2 Instance Roles
-    • Lambda Function Roles
-    • Roles for CloudFormation
+- Some AWS service will need to perform actions on your behalf
+- To do so, we will assign permissions to AWS services with IAM Roles
+- Common roles:
+    - EC2 Instance Roles
+    - Lambda Function Roles
+    - Roles for CloudFormation
 
 ## Security Tool
 - IAM Credentials Report
@@ -93,24 +93,24 @@ Access advisor shows the service permissions granted to a user and when those se
 ## Share IAM Responsibilities
 
 - AWS is responsible for:
-• Infrastructure (global network security)
-• Configuration and vulnerability analysis
-• Compliance validation
+- Infrastructure (global network security)
+- Configuration and vulnerability analysis
+- Compliance validation
 
 - You are responsible for:
-• Users, Groups, Roles, Policies management and monitoring
-• Enable MFA on all accounts
-• Rotate all your keys often
-• Use IAM tools to apply appropriate permissions
-• Analyze access patterns & review permissions
+- Users, Groups, Roles, Policies management and monitoring
+- Enable MFA on all accounts
+- Rotate all your keys often
+- Use IAM tools to apply appropriate permissions
+- Analyze access patterns & review permissions
 
 ## Summary
-• Users: mapped to a physical user, has a password for AWS Console
-• Groups: contains users only
-• Policies: JSON document that outlines permissions for users or groups
-• Roles: for EC2 instances or AWS services
-• Security: MFA + Password Policy
-• AWS CLI: manage your AWS services using the command-line
-• AWS SDK: manage your AWS services using a programming language
-• Access Keys: access AWS using the CLI or SDK
-• Audit: IAM Credential Reports & IAM Access Advisor
+- Users: mapped to a physical user, has a password for AWS Console
+- Groups: contains users only
+- Policies: JSON document that outlines permissions for users or groups
+- Roles: for EC2 instances or AWS services
+- Security: MFA + Password Policy
+- AWS CLI: manage your AWS services using the command-line
+- AWS SDK: manage your AWS services using a programming language
+- Access Keys: access AWS using the CLI or SDK
+- Audit: IAM Credential Reports & IAM Access Advisor

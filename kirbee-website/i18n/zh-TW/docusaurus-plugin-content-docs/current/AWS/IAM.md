@@ -54,17 +54,17 @@ slug: /aws/iam
 
 ## 密码策略
 
-• 强密密码 = 您的帐户
-• 在 AWS 中 您可以设置密码策略：
-• 设置最低密码长度
-• 需要具体的字符类型：
-• 包括大写字母
-• 小写字母
-• 数字
-• 非字母数字字符
-• 允许所有IAM 用户更改自己的密码。
-• 要求用户在一段时间后修改密码(密码过期)
-• 防止密码再使用
+- 强密密码 = 您的帐户
+- 在 AWS 中 您可以设置密码策略：
+- 设置最低密码长度
+- 需要具体的字符类型：
+- 包括大写字母
+- 小写字母
+- 数字
+- 非字母数字字符
+- 允许所有IAM 用户更改自己的密码。
+- 要求用户在一段时间后修改密码(密码过期)
+- 防止密码再使用
 
 ## MFA (多重身份验证)
 
@@ -86,12 +86,12 @@ slug: /aws/iam
 
 ## 角色
 
-• Some AWS service will need to perform actions on your behalf
-• To do so, we will assign permissions to AWS services with IAM Roles
-• Common roles:
-• EC2 Instance Roles
-• Lambda Function Roles
-• Roles for CloudFormation
+- Some AWS service will need to perform actions on your behalf
+- To do so, we will assign permissions to AWS services with IAM Roles
+- Common roles:
+- EC2 Instance Roles
+- Lambda Function Roles
+- Roles for CloudFormation
 
 ## 安全工具
 
@@ -103,25 +103,25 @@ slug: /aws/iam
 
 ## 分享 IAM 责任
 
-- • 基础设施(全球网络安全)
-  • 配置和脆弱性分析
-  • 合规验证
+- - 基础设施(全球网络安全)
+  - 配置和脆弱性分析
+  - 合规验证
 
 - You are responsible for:
-  • Users, Groups, Roles, Policies management and monitoring
-  • Enable MFA on all accounts
-  • Rotate all your keys often
-  • Use IAM tools to apply appropriate permissions
-  • Analyze access patterns & review permissions
+  - Users, Groups, Roles, Policies management and monitoring
+  - Enable MFA on all accounts
+  - Rotate all your keys often
+  - Use IAM tools to apply appropriate permissions
+  - Analyze access patterns & review permissions
 
 ## Summary
 
-• Users: mapped to a physical user, has a password for AWS Console
-• Groups: contains users only
-• Policies: JSON document that outlines permissions for users or groups
-• Roles: for EC2 instances or AWS services
-• Security: MFA + Password Policy
-• AWS CLI: manage your AWS services using the command-line
-• AWS SDK: manage your AWS services using a programming language
-• Access Keys: access AWS using the CLI or SDK
-• Audit: IAM Credential Reports & IAM Access Advisor
+- Users: mapped to a physical user, has a password for AWS Console
+- Groups: contains users only
+- Policies: JSON document that outlines permissions for users or groups
+- Roles: for EC2 instances or AWS services
+- Security: MFA + Password Policy
+- AWS CLI: manage your AWS services using the command-line
+- AWS SDK: manage your AWS services using a programming language
+- Access Keys: access AWS using the CLI or SDK
+- Audit: IAM Credential Reports & IAM Access Advisor
