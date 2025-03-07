@@ -45,10 +45,8 @@ title: Elastic IP
 ![img.png](Hibernate.png)
 - Introducing EC2 Hibernate:
 - The in-memory (RAM) state is preserved
-- The instance boot is much faster!
-(the OS is not stopped / restarted)
-- Under the hood: the RAM state is written
-to a file in the root EBS volume
+- The instance boot is much faster!(the OS is not stopped / restarted)
+- Under the hood: the RAM state is written to a file in the root EBS volume
 - The root EBS volume must be encrypted
 - Use cases:
 - Long-running processing
