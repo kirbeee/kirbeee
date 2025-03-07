@@ -4,8 +4,8 @@
   <ShortName>Sean website</ShortName>
   <Description>Search Sean website</Description>
   <InputEncoding>UTF-8</InputEncoding>
-  <Image width="16" height="16" type="image/x-icon">https://kirbeee.github.io/kirbeee/img/favicon.ico</Image>
-  <Url type="text/html" method="get" template="https://kirbeee.github.io/kirbeee/search?q={searchTerms}"/>
-  <Url type="application/opensearchdescription+xml" rel="self" template="https://kirbeee.github.io/kirbeee/opensearch.xml" />
-  <moz:SearchForm>https://kirbeee.github.io/kirbeee/</moz:SearchForm>
+  <Image width="16" height="16" type="image/x-icon">https://kirbeee.github.io/img/favicon.ico</Image>
+  <Url type="text/html" method="get" template="https://kirbeee.github.io/search?q={searchTerms}"/>
+  <Url type="application/opensearchdescription+xml" rel="self" template="https://kirbeee.github.io/opensearch.xml" />
+  <moz:SearchForm>https://kirbeee.github.io/</moz:SearchForm>
 </OpenSearchDescription>

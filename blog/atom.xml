@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://kirbeee.github.io/kirbeee/blog</id>
+    <id>https://kirbeee.github.io/blog</id>
     <title>Sean website Blog</title>
     <updated>2024-12-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://kirbeee.github.io/kirbeee/blog"/>
+    <link rel="alternate" href="https://kirbeee.github.io/blog"/>
     <subtitle>Sean website Blog</subtitle>
-    <icon>https://kirbeee.github.io/kirbeee/img/favicon.ico</icon>
+    <icon>https://kirbeee.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[What is your dream? What do you want to do in the future?]]></title>
-        <id>https://kirbeee.github.io/kirbeee/blog/2024/12/16/2024-12-16</id>
-        <link href="https://kirbeee.github.io/kirbeee/blog/2024/12/16/2024-12-16"/>
+        <id>https://kirbeee.github.io/blog/2024/12/16/2024-12-16</id>
+        <link href="https://kirbeee.github.io/blog/2024/12/16/2024-12-16"/>
         <updated>2024-12-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[As a university student, I hope to become a scientist who can help make the world a better place.]]></summary>
         <content type="html"><![CDATA[<p>As a university student, I hope to become a scientist who can help make the world a better place.</p>
@@ -25,12 +25,12 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[An Unforgettable Journey to the Summit of Yushan]]></title>
-        <id>https://kirbeee.github.io/kirbeee/blog/2024/11/10/2024-11-10</id>
-        <link href="https://kirbeee.github.io/kirbeee/blog/2024/11/10/2024-11-10"/>
+        <id>https://kirbeee.github.io/blog/2024/11/10/2024-11-10</id>
+        <link href="https://kirbeee.github.io/blog/2024/11/10/2024-11-10"/>
         <updated>2024-11-10T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This weekend, I went hiking on Yushan with my university classmates. During the two-day, one-night journey, I will never forget the breathtaking view from the summit of Yushan Main Peak.]]></summary>
         <content type="html"><![CDATA[<p>This weekend, I went hiking on Yushan with my university classmates. During the two-day, one-night journey, I will never forget the breathtaking view from the summit of Yushan Main Peak.</p>
-<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/kirbeee/assets/images/IMG_1046-073b5133519ab37a4228d9ac10abe7a1.jpeg" width="640" height="480" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" alt="test" src="https://kirbeee.github.io/assets/images/IMG_1046-073b5133519ab37a4228d9ac10abe7a1.jpeg" width="640" height="480" class="img_ev3q"></p>
 <p>On Saturday afternoon, we rented a car together and drove to the mountain hut where we were to stay for the first night. Along the way, we stopped at convenience stores to buy food and supplies for the two days. The journey was filled with laughter as we drove while listening to music and enjoying the beautiful sunset scenery. By the time we arrived at our destination, it was already evening. We gathered in the mountain hut to enjoy the dinner we had bought earlier. After the meal, we decided to go out for a walk.</p>
 <p>The moment we opened the door, a gust of cold wind rushed towards us. Out of curiosity, we ventured a short distance despite the chill. Just as we were about to head back to the hut, one of my friends exclaimed, “Look up!” That’s when I noticed the sky filled with countless stars, a sight I had never seen before. I was so excited that I hurried to capture the scene with my phone. It felt like the stars were blessing us for a successful climb the next day!</p>
 <p>The following day, we woke up at 3 a.m., changed into our gear, and began our summit attempt. At that time, it was still dark, and we relied on our headlamps to illuminate the path. Along the way, we spotted some of Taiwan’s endemic species, which we assumed were Formosan muntjacs. Although we weren’t entirely sure, it was both surprising and delightful to see them. As the sun gradually rose, it illuminated the entire valley.</p>

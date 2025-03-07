@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[8158],{48158:(e,s,a)=>{a.r(s),a.d(s,{DocSearchModal:()=>b.a1});var b=a(55600)}}]);
