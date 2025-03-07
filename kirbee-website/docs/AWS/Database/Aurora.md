@@ -82,7 +82,6 @@
     - Retention of backup for as long as you want
 
 # Aurora Database Cloning
-![img.png](img.png)
 - Create a new Aurora DB Cluster from an existing one
 - Faster than snapshot & restore
 - Uses copy-on-write protocol
