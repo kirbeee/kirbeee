@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[2741],{63971:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/zh-TW/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
