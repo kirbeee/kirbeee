@@ -14,7 +14,7 @@ const config: Config = {
   url: 'https://kirbeee.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/kirbeee/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -61,7 +61,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/kirbeee/kirbeee',
           // Useful options to enforce blogging best practices
