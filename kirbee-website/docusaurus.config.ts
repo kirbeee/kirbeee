@@ -51,6 +51,7 @@ const config: Config = {
     [
       'classic',
       {
+
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/docs',
@@ -74,12 +75,36 @@ const config: Config = {
         gtag: {
           trackingID: 'G-QYDJFN4WVD',
           anonymizeIP: true,
-        }
+        },
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'weekly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
+        },
       } satisfies Preset.Options,
     ],
   ],
 
-  plugins: [tailwindPlugin],
+  plugins: [
+      tailwindPlugin,
+    [
+        '@docusaurus/plugin-ideal-image',
+    {
+      quality: 70,
+      max: 1030, // max resized image's size.
+      min: 640, // min resized image's size. if original is lower, use that size.
+      steps: 2, // the max number of images generated between min and max (inclusive)
+      disableInDev: false,
+    },
+    ]
+  ],
 
   // themes: ['@docusaurus/theme-search-algolia'],
   themeConfig: {
@@ -87,8 +112,7 @@ const config: Config = {
     image: 'img/docusaurus-social-card.jpg',
     // Declare some <meta> tags
     metadata: [
-      {name: 'keywords', content: 'cooking, blog'},
-      {name: 'twitter:card', content: 'summary_large_image'},
+      {name: 'keywords', content: 'computer science, blog'},
     ],
 
     algolia: {

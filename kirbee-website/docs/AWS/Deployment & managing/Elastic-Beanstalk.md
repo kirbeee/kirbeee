@@ -19,8 +19,23 @@ title: Elastic Beanstalk
 ## Architecture
 - Three architecture models:
 - Single Instance deployment: good for dev
-- LB + ASG: great for production or pre-production web applications
+- ELB + ASG: great for production or pre-production web applications
 - ASG only: great for non-web apps in production (workers, etc..)
 # Beanstalk
 - Health agent pushes metrics to CloudWatch
 - Checks for app health, publishes health events
+
+## Elastic Beanstalk – Components
+- Application: collection of Elastic Beanstalk components (environments, versions, configurations, …)
+- Application Version: an iteration of your application code
+- Environment
+    - Collection of AWS resources running an application version (only one application version at a time)
+    - Tiers: Web Server Environment Tier & Worker Environment Tier
+    - You can create multiple environments (dev, test, prod, …)
+
+## Web Server Tier vs. Worker Tier
+![img.png](two-working-tier.png)
+
+## Elastic Beanstalk Deployment Modes
+![img.png](deployment.png)
+

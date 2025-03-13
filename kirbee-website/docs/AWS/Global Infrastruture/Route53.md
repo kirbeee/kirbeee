@@ -41,16 +41,11 @@ title: AWS Route 53
   - Geoproximity (using Route 53 Traffic Flow feature)
 
 ## Simple Routing Policy
-- Typically, route traffic to a single
-resource
-- Can specify multiple values in the
-same record
-- If multiple values are returned, a
-random one is chosen by the client
-- When Alias enabled, specify only
-one AWS resource
-- Can’t be associated with Health
-Checks
+- Typically, route traffic to a single resource
+- Can specify multiple values in the same record
+- If multiple values are returned, a random one is chosen by the client
+- When Alias enabled, specify only one AWS resource
+- Can’t be associated with Health Checks
 
 ## Weighted Routing Policy
 - control the percentage the request that go to each specific resource
@@ -71,13 +66,41 @@ Checks
 ## Failover Routing Policy(Active-Passive)
 ![img.png](fail-over.png)
 
-# Geolocation Routing Policy
+## Geolocation Routing Policy
 - Different from Latency-based!
 - This routing is based on user location
 - Specify location by Continent, Country or by US State (if there’s overlapping, most precise location selected)
 - Should create a “Default” record (in case there’s no match on location)
 - Use cases: website localization, restrict content distribution, load balancing, ...
 - Can be associated with Health Checks
+
+## Geo proximate Routing Policy
+![img.png](geo-1.png)
+![img.png](geo-2.png)
+- Route traffic to your resources based on the geographic location of users and
+resources
+- Ability to shift more traffic to resources based on the defined bias
+- To change the size of the geographic region, specify bias values:
+- To expand (1 to 99) – more traffic to the resource
+- To shrink (-1 to -99) – less traffic to the resource
+- Resources can be:
+- AWS resources (specify AWS region)
+- Non-AWS resources (specify Latitude and Longitude)
+- You must use Route 53 Traffic Flow to use this feature
+
+## IP based Routing Policy
+![img.png](ip-base-routing.png)
+- Routing is based on clients’ IP addresses
+- You provide a list of CIDRs for your clients and the corresponding endpoints/locations(user-IP-to-endpoint mappings)
+- Use cases: Optimize performance, reduce network costs…
+- Example: route end users from a particular ISP to a specific endpoint
+
+## Multi value Routing Policy
+- Use when routing traffic to multiple resources
+- Route 53 return multiple values/resources
+- Can be associated with Health Checks (return only values for healthy resources)
+- Up to 8 healthy records are returned for each Multi-Value query
+- Multi-Value is not a substitute for having an ELB
 
 # Record
 - How you want to route traffic for a domain
