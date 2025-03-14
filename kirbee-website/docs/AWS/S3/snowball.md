@@ -27,3 +27,8 @@ title: S3 Snowball
 - Committed Upfront
     - Pay in advance for monthly, I-year, and 3-years of usage (Edge Computing)
     - Up to 62% discounted pricing
+
+# Solution Architecture: Snowball into Glacier
+- Snowball cannot import to Glacier directly
+- You must use Amazon S3 first, in combination with an S3 lifecycle policy
+![img.png](snowball-glacier.png)
