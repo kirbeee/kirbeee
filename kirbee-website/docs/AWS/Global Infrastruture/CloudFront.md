@@ -35,3 +35,23 @@ title: CloudFront
 - Files are updated in near real-time
 - Read only
 - Great for dynamic content that needs to be available at low-latency in few
+## ALB or EC2 as an origin
+![img.png](ALB-EC2.png)
+
+## CloudFront Geo Restriction
+- You can restrict who can access your distribution
+- Allowlist: Allow your users to access your content only if they're in one of the countries on a list of approved countries.
+- Blocklist: Prevent your users from accessing your content if they're in one of the countries on a list of banned countries.
+- The “country” is determined using a 3rd party Geo-IP database
+- Use case: Copyright Laws to control access to content
+
+## CloudFront - Pricing
+- CloudFront Edge locations are all around the world
+- The cost of data out per edge location varies
+![img.png](cloudfront-pricing.png)
+
+## Cache Invalidations
+- In case you update the back-end origin, CloudFront doesn’t know about it and will only get the refreshed content after the TTL has expired
+- However, you can force an entire or partial cache refresh (thus bypassing the TTL) by performing a CloudFront Invalidation
+- You can invalidate all files (*) or a special path (/images/*)
+![img.png](cache\-invalidation.png)

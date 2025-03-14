@@ -281,3 +281,65 @@ S3:ObjectRestore, S3:Replication…
 - Can be configured to export metrics daily to an S3 bucket (CSV, Parquet)
 ![img.png](storage-lens.png)
 
+## S3 Access Logs
+S3 Access Logs
+- For audit purpose, you may want to log all access to S3 buckets
+- Any request made to S3, from any account, authorized or denied, will be logged into another S3 bucket
+- That data can be analyzed using data analysis tools…
+- The target logging bucket must be in the same AWS region
+- The log format is at:
+https://docs.aws.amazon.com/AmazonS3/latest/dev/LogFormat.html
+![img.png](S3-access-log.png)
+
+## S3 Pre-signed URLs
+- Generate pre-signed URLs using the S3 Console, AWS CLI or SDK
+- URL Expiration
+- S3 Console – 1 min up to 720 mins (12 hours)
+- AWS CLI – configure expiration with --expires-in parameter in seconds (default 3600 secs, max. 604800 secs ~ 168 hours)
+- Users given a pre-signed URL inherit the permissions of the user that generated the URL for GET/ PUT
+- Examples:
+- Allow only logged-in users to download a premium video from your S3 bucket
+- Allow an ever-changing list of users to download files by generating URLs dynamically
+- Allow temporarily a user to upload a file to a precise location in your S3 bucket
+
+## S3 Glacier Vault Lock
+- Adopt a WORM (Write Once Read Many) model
+- Create a Vault Lock Policy
+- Lock the policy for future edits(can no longer be changed or deleted)
+- Helpful for compliance and data retention
+![img.png](S3-glacier-vault-lock.png)
+### S3 Object Lock (versioning must be enabled)
+- Adopt a WORM (Write Once Read Many) model
+- Block an object version deletion for a specified amount of time
+- Retention mode - Compliance:
+- Object versions can't be overwritten or deleted by any user, including the root user
+- Objects retention modes can't be changed, and retention periods can't be shortened
+- Retention mode - Governance:
+- Most users can't overwrite or delete an object version or alter its lock settings
+- Some users have special permissions to change the retention or delete the object
+- Retention Period: protect the object for a fixed period, it can be extended
+- Legal Hold:
+- protect the object indefinitely, independent from retention period
+- can be freely placed and removed using the s3:PutObjectLegalHold IAM permission
+
+## S3 access points
+![img.png](access-point.png)
+- Access Points simplify security management for S3 Buckets
+- Each Access Point has:
+  - its own DNS name (Internet Origin or VPC Origin)
+  - an access point policy (similar to bucket policy) – manage security at scale
+
+### Access Points – VPC Origin
+![img.png](vpc-origin.png)
+- We can define the access point to be accessible only from within the VPC
+- You must create a VPC Endpoint to access the Access Point (Gateway or Interface Endpoint)
+- The VPC Endpoint Policy must allow access to the target bucket and Access Point
+
+### Object Lambda
+![img.png](object-lambda.png)
+- Use AWS Lambda Functions to change the object before it is retrieved by the caller application
+- Only one S3 bucket is needed, on top. of which we create S3 Access Point and S3 Object Lambda Access Points.
+- Use Cases:
+- Redacting personally identifiable information for analytics or non-production environments.
+- Converting across data formats, such as converting XML to JSON.
+- Resizing and watermarking images on the fly using caller-specific details, such as the user who requested the object.
