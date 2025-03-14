@@ -18,7 +18,7 @@
 
 <link rel="preconnect" href="https://example.com">
 <script type="application/ld+json">{"@context":"https://schema.org/","@type":"Organization","name":"Meta Open Source","url":"https://opensource.fb.com/","logo":"https://opensource.fb.com/img/logos/Meta-Open-Source.svg"}</script><link rel="stylesheet" href="/kirbeee/assets/css/styles.73b76527.css">
-<script src="/kirbeee/assets/js/runtime~main.ad76443a.js" defer="defer"></script>
+<script src="/kirbeee/assets/js/runtime~main.ac326e77.js" defer="defer"></script>
 <script src="/kirbeee/assets/js/main.a70fc8cd.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -64,6 +64,29 @@
 <li>Files are updated in near real-time</li>
 <li>Read only</li>
 <li>Great for dynamic content that needs to be available at low-latency in few</li>
-</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/kirbeee/docs/AWS/ELB &amp; ASG/Introduction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Elastic Load Balancer &amp; Auto Scaling Group</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/kirbeee/docs/AWS/Global Infrastruture/EdgeLocation"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Edge Location</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#s3-bucket" class="table-of-contents__link toc-highlight">S3 bucket</a></li><li><a href="#custom-origin-http" class="table-of-contents__link toc-highlight">Custom Origin (HTTP)</a></li><li><a href="#cloudfront" class="table-of-contents__link toc-highlight">CloudFront:</a></li><li><a href="#s3-cross-region-replication" class="table-of-contents__link toc-highlight">S3 Cross Region Replication:</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="alb-or-ec2-as-an-origin">ALB or EC2 as an origin<a href="#alb-or-ec2-as-an-origin" class="hash-link" aria-label="Direct link to ALB or EC2 as an origin" title="Direct link to ALB or EC2 as an origin">​</a></h2>
+<p><img decoding="async" loading="lazy" alt="img.png" src="/kirbeee/assets/images/ALB-EC2-6892235b906fe26d5724a6827ecc8606.png" width="1329" height="592" class="img_ev3q"></p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloudfront-geo-restriction">CloudFront Geo Restriction<a href="#cloudfront-geo-restriction" class="hash-link" aria-label="Direct link to CloudFront Geo Restriction" title="Direct link to CloudFront Geo Restriction">​</a></h2>
+<ul>
+<li>You can restrict who can access your distribution</li>
+<li>Allowlist: Allow your users to access your content only if they&#x27;re in one of the countries on a list of approved countries.</li>
+<li>Blocklist: Prevent your users from accessing your content if they&#x27;re in one of the countries on a list of banned countries.</li>
+<li>The “country” is determined using a 3rd party Geo-IP database</li>
+<li>Use case: Copyright Laws to control access to content</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cloudfront---pricing">CloudFront - Pricing<a href="#cloudfront---pricing" class="hash-link" aria-label="Direct link to CloudFront - Pricing" title="Direct link to CloudFront - Pricing">​</a></h2>
+<ul>
+<li>CloudFront Edge locations are all around the world</li>
+<li>The cost of data out per edge location varies
+<img decoding="async" loading="lazy" alt="img.png" src="/kirbeee/assets/images/cloudfront-pricing-69b62dd284a9d439643a130926e97450.png" width="1093" height="426" class="img_ev3q"></li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="cache-invalidations">Cache Invalidations<a href="#cache-invalidations" class="hash-link" aria-label="Direct link to Cache Invalidations" title="Direct link to Cache Invalidations">​</a></h2>
+<ul>
+<li>In case you update the back-end origin, CloudFront doesn’t know about it and will only get the refreshed content after the TTL has expired</li>
+<li>However, you can force an entire or partial cache refresh (thus bypassing the TTL) by performing a CloudFront Invalidation</li>
+<li>You can invalidate all files (<em>) or a special path (/images/</em>)
+<img decoding="async" loading="lazy" alt="img.png" src="/kirbeee/assets/images/cache-invalidation-3b6571d9a5861f8d8b0a021bb629f9ae.png" width="648" height="673" class="img_ev3q"></li>
+</ul></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/kirbeee/docs/AWS/ELB &amp; ASG/Introduction"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Elastic Load Balancer &amp; Auto Scaling Group</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/kirbeee/docs/AWS/Global Infrastruture/EdgeLocation"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Edge Location</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#s3-bucket" class="table-of-contents__link toc-highlight">S3 bucket</a></li><li><a href="#custom-origin-http" class="table-of-contents__link toc-highlight">Custom Origin (HTTP)</a></li><li><a href="#cloudfront" class="table-of-contents__link toc-highlight">CloudFront:</a></li><li><a href="#s3-cross-region-replication" class="table-of-contents__link toc-highlight">S3 Cross Region Replication:</a></li><li><a href="#alb-or-ec2-as-an-origin" class="table-of-contents__link toc-highlight">ALB or EC2 as an origin</a></li><li><a href="#cloudfront-geo-restriction" class="table-of-contents__link toc-highlight">CloudFront Geo Restriction</a></li><li><a href="#cloudfront---pricing" class="table-of-contents__link toc-highlight">CloudFront - Pricing</a></li><li><a href="#cache-invalidations" class="table-of-contents__link toc-highlight">Cache Invalidations</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
