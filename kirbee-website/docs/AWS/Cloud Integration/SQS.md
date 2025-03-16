@@ -11,7 +11,7 @@ title: SQS (Simple Queue Service)
 ### Attributes
 - Unlimited throughput, unlimited number of messages in queue
 - Default retention of messages: 4 days, maximum of 14 days
-- Low latency (<10 ms on publish and receive)
+- Low latency ( less 10 ms on publish and receive)
 - Limitation of 256KB per message sent
 
 - Can have duplicate messages (at least once delivery, occasionally)
