@@ -9,3 +9,6 @@ title: MQ (Message Queue)
 - Amazon MQ doesn't "scale" as much as SOS / SNS
 - Amazon MQ runs on servers, can run in Multi-AZ with failover
 - Amazon MQ has both queue feature (~SQS) and topic features (~SNS)
+
+## High Availability
+![img.png](MQ-high-availability.png)

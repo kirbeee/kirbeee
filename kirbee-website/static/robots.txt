@@ -1,2 +1,7 @@
 User-agent: *
 Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kirbeee.github.io/kirbeee/sitemap.xml
