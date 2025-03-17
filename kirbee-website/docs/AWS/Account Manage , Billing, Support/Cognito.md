@@ -1,5 +1,8 @@
 ---
 title: Cognito
+last_update:
+  date: 3/17/2025
+  author: Sean
 ---
 # Cognito
 ![Cognito](Cognito.png)

@@ -51,10 +51,13 @@ const config: Config = {
     [
       'classic',
       {
-
         docs: {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/docs',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          editUrl:
+              'https://github.com/kirbeee/kirbeee',
         },
         blog: {
           showReadingTime: true,
@@ -62,9 +65,6 @@ const config: Config = {
             type: ['rss', 'atom'],
             xslt: true,
           },
-          editUrl:
-            'https://github.com/kirbeee/kirbeee',
-          // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',

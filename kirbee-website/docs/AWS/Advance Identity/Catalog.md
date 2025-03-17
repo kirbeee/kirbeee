@@ -1,5 +1,8 @@
 ---
 title: Catalog
+last_update:
+  date: 3/17/2025
+  author: Sean
 ---
 # Catalog
 ![Catalog](Catalog.png)

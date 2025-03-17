@@ -1,5 +1,8 @@
 ---
 title: CloudWatch
+last_update:
+  date: 3/17/2025
+  author: Sean
 ---
 # Billing Alarms in CloudWatch
 - Billing data metric is stored in CloudWatch us-east-I

@@ -1,6 +1,10 @@
 ---
 title: Lambda
 author: kirbee
+tags: [AWS]
+last_update:
+  date: 3/17/2025
+  author: Sean
 ---
 
 # Lambda vs EC2
@@ -48,3 +52,23 @@ EC2:
     -== 3,200,000 seconds if function is 128 MB RAM
     - After that $1.00 for 600,000 GB-seconds
 - It is usually very cheap to run AWS Lambda so it's very popular
+
+## AWS Lambda Integrations Main Services
+![img.png](Integrate-Lambda.png)
+
+## Example: Serverless Thumbnail Generation
+![img.png](arch-1.png)
+## Example: Serverless CRON Job
+![img.png](arch-2.png)
+
+## Lambda Concurrency and Throttling
+- Concurrency limit: up to 1000 concurrent executions
+![img.png](concurrency.png)
+- Can set a “reserved concurrency” at the function level (=limit)
+- Each invocation over the concurrency limit will trigger a “Throttle”
+- Throttle behavior:
+- If synchronous invocation => return ThrottleError - 429
+- If asynchronous invocation => retry automatically and then go to DLQ
+- If you need a higher limit, open a support ticket
+
+

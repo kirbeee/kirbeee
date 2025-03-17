@@ -1,5 +1,8 @@
 ---
 title: Support Plan
+last_update:
+  date: 3/17/2025
+  author: Sean
 ---
 # AWS Support Plan
 ![AWS Support Plan](./Support-Plan.png)
