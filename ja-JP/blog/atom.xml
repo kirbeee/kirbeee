@@ -2,11 +2,78 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://kirbeee.github.io/kirbeee/ja-JP/blog</id>
     <title>Sean website Blog</title>
-    <updated>2024-12-16T00:00:00.000Z</updated>
+    <updated>2025-01-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://kirbeee.github.io/kirbeee/ja-JP/blog"/>
     <subtitle>Sean website Blog</subtitle>
     <icon>https://kirbeee.github.io/kirbeee/ja-JP/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[ずっと真夜中でいいのに - サターン]]></title>
+        <id>https://kirbeee.github.io/kirbeee/ja-JP/blog/song/saturn</id>
+        <link href="https://kirbeee.github.io/kirbeee/ja-JP/blog/song/saturn"/>
+        <updated>2025-01-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This page is still under construction, and its content may change!]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Work in Progress 🚧</div><div class="admonitionContent_BuS1"><p>This page is still under construction, and its content may change!</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="-歌詞">📝 歌詞<a href="https://kirbeee.github.io/kirbeee/ja-JP/blog/song/saturn#-%E6%AD%8C%E8%A9%9E" class="hash-link" aria-label="📝 歌詞 への直接リンク" title="📝 歌詞 への直接リンク">​</a></h2>
+<p>私といるより楽しまないで<br>
+<!-- -->心に傷を負った君がいい</p>
+<p>不安にさせるの得意だよね<br>
+<!-- -->口下手な好きが欲しいの<br>
+<!-- -->こなれないで<br>
+<!-- -->こわしてみてよ<br>
+<!-- -->こなれないで<br>
+<!-- -->こわしてみてよ<br>
+<!-- -->関心なタイトルも 思い出せないまま<br>
+<!-- -->何回も回したレコード 積み重なっては隠した<br>
+<!-- -->今日だって真っ白な地球 目を瞑ったけど<br>
+<!-- -->知りたくないあの子と彼の空間中継 目に焼き付いてる<br>
+<!-- -->相槌を覚えたせいで そらした気温とか<br>
+<!-- -->終わりを告げてくデータとコードと酸素を飲み込んでく<br>
+<!-- -->私だって今更無重力の<br>
+<!-- -->おやすみもごめんねも飽きたけど<br>
+<!-- -->言わなきゃ でもやっぱやだ<br>
+<!-- -->それじゃ何も始まらないのだから<br>
+<!-- -->言わなきゃ なんかこのまま<br>
+<!-- -->気づかないふりしあいっこでいいのかな<br>
+<!-- -->いびつでもいい 今日も照らし続けるよ<br>
+<!-- -->最後に気づいてもらえなくても<br>
+<!-- -->木星も 月も 突き抜けなきゃ<br>
+<!-- -->叶わぬ声も触れられないもん<br>
+<!-- -->少しだけあなたの住む世界 まわりまわって近づけたときは<br>
+<!-- -->震える声に耳澄まして 気まずいくらいに返さないでよ<br>
+<!-- -->この距離だって乗り越えられるよね<br>
+<!-- -->なんて強気じゃいられないよ<br>
+<!-- -->会うための約束も タイミング見計らってばかり<br>
+<!-- -->君の匂いも あれ いつのまに変わってた<br>
+<!-- -->超えなきゃ 逃げちゃダメだ<br>
+<!-- -->どう思われるか気にしてばかりだ<br>
+<!-- -->会わなきゃ 会って聞かなきゃ<br>
+<!-- -->目を逸らしたがるのずっと気づいてたよ<br>
+<!-- -->いびつでもいい 今日も照らし続けるよ<br>
+<!-- -->最後に気づいてもらえなくても<br>
+<!-- -->木星も 月も 突き抜けなきゃ<br>
+<!-- -->叶わぬ声も触れられないもん<br>
+<!-- -->少しだけあなたの住む世界<br>
+<!-- -->まわりまわって近づけた時は<br>
+<!-- -->あなたが最初に私を見つけてほしい<br>
+<!-- -->なんて言えないけど<br>
+<!-- -->まだ起きてる? 今日は誰をみているの<br>
+<!-- -->何の為に私 照らしてるの?<br>
+<!-- -->太陽も 月も 突き抜けなきゃ<br>
+<!-- -->叶わぬ声も触れられないもん<br>
+<!-- -->少しだけあなたの住む世界<br>
+<!-- -->まわりまわって近づけた時は<br>
+<!-- -->震える声に耳澄まして<br>
+<!-- -->気まずいくらいに返さないでよ<br>
+<!-- -->この距離だって乗り越えられるよね<br>
+<!-- -->なんて困らせたりしないよ</p>]]></content>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
+        <category label="song" term="song"/>
+        <category label="lyrics" term="lyrics"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[あなたの夢は何ですか。将来どんなことをしようと思っていますか]]></title>
         <id>https://kirbeee.github.io/kirbeee/ja-JP/blog/2024/12/16/2024-12-16</id>
@@ -37,5 +104,33 @@
             <name>Sean Lin</name>
             <uri>https://github.com/kirbeee</uri>
         </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Sun Moon Lake Marathon]]></title>
+        <id>https://kirbeee.github.io/kirbeee/ja-JP/blog/2024/10/27/2024-10-27</id>
+        <link href="https://kirbeee.github.io/kirbeee/ja-JP/blog/2024/10/27/2024-10-27"/>
+        <updated>2024-10-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This page is still under construction, and its content may change!]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Work in Progress 🚧</div><div class="admonitionContent_BuS1"><p>This page is still under construction, and its content may change!</p></div></div>]]></content>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
+        <category label="song" term="song"/>
+        <category label="lyrics" term="lyrics"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Tainan Historical Capital International Half Marathon]]></title>
+        <id>https://kirbeee.github.io/kirbeee/ja-JP/blog/2024/03/03/2024-03-03</id>
+        <link href="https://kirbeee.github.io/kirbeee/ja-JP/blog/2024/03/03/2024-03-03"/>
+        <updated>2024-03-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This page is still under construction, and its content may change!]]></summary>
+        <content type="html"><![CDATA[<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>Work in Progress 🚧</div><div class="admonitionContent_BuS1"><p>This page is still under construction, and its content may change!</p></div></div>]]></content>
+        <author>
+            <name>Sean Lin</name>
+            <uri>https://github.com/kirbeee</uri>
+        </author>
+        <category label="song" term="song"/>
+        <category label="lyrics" term="lyrics"/>
     </entry>
 </feed>
