@@ -71,4 +71,87 @@ EC2:
 - If asynchronous invocation => retry automatically and then go to DLQ
 - If you need a higher limit, open a support ticket
 
+### Lambda Concurrency Issue
+![img.png](concurrency-issue.png)
+
+## Concurrency and Asynchronous Invocations
+- If the function doesn't have enough concurrency available to process all events, additional requests are throttled.
+- For throttling errors (429) and system errors (500-series), Lambda returns the event to the queue and attempts to run the function again for up to 6 hours.
+- The retry interval increases exponentially from 1 second after the first attempt to a maximum of 5 minutes.
+![img.png](async-invocation.png)
+
+## Cold Starts & Provisioned Concurrency
+- Cold Start:
+  - New instance => code is loaded and code outside the handler run (init)
+  - If the init is large (code, dependencies, SDK…) this process can take some time.
+  - First request served by new instances has higher latency than the rest
+- Provisioned Concurrency:
+  - Concurrency is allocated before the function is invoked (in advance)
+  - So the cold start never happens and all invocations have low latency
+  - Application Auto Scaling can manage concurrency (schedule or target utilization)
+- Note:
+  - Note: cold starts in VPC have been dramatically reduced in Oct & Nov 2019
+  - https://aws.amazon.com/blogs/compute/announcing-improved-vpc-networking-for-aws-lambda-functions/
+
+## Reserved and Provisioned Concurrency
+![img.png](provisioned-concurrency.png)
+
+## Lambda SnapStart
+- Improves your Lambda functions performance up to 10x at no extra cost for Java, Python & .NET
+- When enabled, function is invoked from a pre- initialized state (no function initialization from scratch)
+- When you publish a new version:
+- Lambda initializes your function
+- Takes a snapshot of memory and disk state of the initialized function
+- Snapshot is cached for low-latency access
+![img.png](lambda-snapstart.png)
+
+## Customization At The Edge
+- Many modern applications execute some form of the logic at the edge
+- Edge Function:
+- A code that you write and attach to CloudFront distributions
+- Runs close to your users to minimize latency
+- CloudFront provides two types: CloudFront Functions & Lambda@Edge
+- You don’t have to manage any servers, deployed globally
+- Use case: customize the CDN content
+- Pay only for what you use
+- Fully serverless
+
+### CloudFront Functions & Lambda@Edge Use Cases
+- Website Security and Privacy
+- Dynamic Web Application at the Edge
+- Search Engine Optimization (SEO)
+- Intelligently Route Across Origins and Data Centers
+- Bot Mitigation at the Edge
+- Real-time Image Transformation
+- A/B Testing
+- User Authentication and Authorization
+- User Prioritization
+- User Tracking and Analytics
+
+## Lambda by default
+- By default, your Lambda function is launched outside your own VPC (in an AWS-owned VPC)
+- Therefore, it cannot access resources in your VPC (RDS, ElastiCache, internal ELB…)
+![img.png](lambda-default.png)
+
+## Lambda in VPC
+- You must define the VPC ID, the Subnets and the Security Groups
+- Lambda will create an ENI (Elastic Network Interface) in your subnets
+![img.png](lambda-VPC.png)
+
+## Lambda with RDS Proxy
+- If Lambda functions directly access your database, they may open too many connections under high load
+- RDS Proxy
+  - Improve scalability by pooling and sharing DB connections
+  - Improve availability by reducing by 66% the failover time and preserving connections
+  - Improve security by enforcing IAM authentication and storing credentials in Secrets Manager
+- The Lambda function must be deployed in your VPC, because RDS Proxy is never publicly accessible
+![img.png](lambda-RDS.png)
+
+## Invoking Lambda from RDS & Aurora
+- Invoke Lambda functions from within your DB instance
+- Allows you to process data events from within a database
+- Supported for RDS for PostgreSQL and Aurora MySQL
+- Must allow outbound traffic to your Lambda function from within your DB instance (Public, NAT GW, VPC Endpoints)
+- DB instance must have the required permissions to invoke the Lambda function (Lambda Resource-based Policy & IAM Policy)
+![img.png](RDS-Aurora-Lambda.png)
 

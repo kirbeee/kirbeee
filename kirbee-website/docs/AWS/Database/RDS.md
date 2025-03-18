@@ -137,3 +137,12 @@ title: RDS (Relational Database Service)
 - Enforce IAM Authentication for DB, and securely store credentials in AWS Secrets Manager
 - RDS Proxy is never publicly accessible (must be access from VPC)
 ![img.png](RDS-proxy.png)
+
+## RDS Event Notifications
+- Notifications that tells information about the DB instance itself (created, stopped, start, …)
+- You don’t have any information about the data itself
+- Subscribe to the following event categories: DB instance, DB snapshot, DB Parameter Group, DB Security Group, RDS Proxy, Custom Engine Version
+- Near real-time events (up to 5 minutes)
+- Send notifications to SNS or subscribe to events using EventBridge
+![img.png](RDS-notification.png)
+
