@@ -5,4 +5,4 @@
 
 ---
 ### 🎓 Certified
-https://www.credly.com/badges/d8d98d1c-08c3-4806-9de7-c1155b691ace/public_url
+[![AWS Certified Cloud Practitioner](./aws-certified-solutions-architect-associate.png)](https://www.credly.com/badges/6c2802fa-8625-4f78-8afe-cf5ae899a2cc/public_url) [![AWS Certified Cloud Practitioner](./aws-certified-cloud-practitioner.png)](https://www.credly.com/badges/cc223fca-bf88-40e9-9db7-c1ed778c627a/public_url)
