@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[6577],{21781:e=>{e.exports=JSON.parse('{"tags":[{"label":"song","permalink":"/ja-JP/blog/tags/song","count":3},{"label":"lyrics","permalink":"/ja-JP/blog/tags/lyrics","count":3}]}')}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[7136],{56807:e=>{e.exports=JSON.parse('{"tags":[{"label":"song","permalink":"/zh-TW/blog/tags/song","count":3},{"label":"lyrics","permalink":"/zh-TW/blog/tags/lyrics","count":3},{"label":"Hello","permalink":"/zh-TW/blog/tags/hello","description":"Hello tag description","count":1}]}')}}]);

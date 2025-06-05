@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[9067],{19187:e=>{e.exports=JSON.parse('{"tags":[{"label":"AWS","permalink":"/docs/tags/aws","count":2}]}')}}]);

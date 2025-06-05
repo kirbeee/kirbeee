@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkkirbee_website=self.webpackChunkkirbee_website||[]).push([[8121],{68070:e=>{e.exports=JSON.parse('{"tags":[{"label":"song","permalink":"/blog/tags/song","count":3},{"label":"lyrics","permalink":"/blog/tags/lyrics","count":3}]}')}}]);
