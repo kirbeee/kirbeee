@@ -27,6 +27,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
+          cache-dependency-path: ./kirbee-website/package-lock.json
 
       - name: Install dependencies
         working-directory: ./kirbee-website
