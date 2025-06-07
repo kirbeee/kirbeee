@@ -3,4 +3,4 @@ Disallow:
 
 User-agent: *
 Allow: /
-Sitemap: https://kirbeee.github.io/kirbeee/sitemap.xml
+Sitemap: https://kirbeee.dpdns.org/sitemap.xml
