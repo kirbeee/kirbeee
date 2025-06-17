@@ -17,3 +17,23 @@ hola:
   label: Hola
   permalink: /hola
   description: Hola tag description
+
+diary:
+    label: Diary
+    permalink: /diary
+    description: Diary tag description
+
+AWS:
+  label: AWS
+  permalink: /aws
+  description: AWS tag description
+
+song:
+  label: Song
+  permalink: /song
+  description: Song tag description
+
+lyrics:
+  label: Lyrics
+  permalink: /lyrics
+  description: Lyrics tag description

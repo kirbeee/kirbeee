@@ -79,7 +79,7 @@
     "message": "バージョン: {versionLabel}"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "タグ付けされたドキュメント|{count} ドキュメント",
+    "message": "{count} ドキュメント",
     "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.tagDocListPageTitle": {
@@ -223,7 +223,7 @@
     "description": "The ARIA label for the link to full blog posts from excerpts"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "1分間の読み取り|{readingTime} 分間の読み取り",
+    "message": "{readingTime} 分間の読み取り",
     "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
@@ -390,7 +390,7 @@
     "description": "The paragraph for fetching new search results"
   },
   "theme.blog.post.plurals": {
-    "message": "1 つの投稿|{count} 投稿",
+    "message": "{count} 投稿",
     "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
   },
   "theme.blog.tagTitle": {

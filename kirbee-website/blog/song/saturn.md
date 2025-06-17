@@ -2,11 +2,12 @@
 title: ずっと真夜中でいいのに - サターン
 authors: [Sean]
 date: 2025-01-07
-tags: [song, lyrics]
+tags: [song]
 ---
 :::caution Work in Progress 🚧
 This page is still under construction, and its content may change!
 :::
+<!-- truncate -->
 ## 📝 歌詞
 私といるより楽しまないで  
 心に傷を負った君がいい 

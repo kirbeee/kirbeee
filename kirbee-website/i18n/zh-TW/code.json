@@ -1,444 +1,446 @@
 {
   "theme.ErrorPageContent.title": {
-    "message": "此页面已崩溃。",
-    "description": "The title of the fallback page when the page crashed"
+    "message": "好像有點狀況！ (๑⚈ ᴥ ⚈๑)",
+    "description": "當頁面崩潰時顯示的標題"
   },
   "theme.BackToTopButton.buttonAriaLabel": {
-    "message": "回滚到顶部",
-    "description": "The ARIA label for the back to top button"
+    "message": "到頂部",
+    "description": "回到頂部按鈕的 ARIA 標籤"
   },
   "theme.blog.archive.title": {
-    "message": "存档",
-    "description": "The page & hero title of the blog archive page"
+    "message": "存檔",
+    "description": "部落格存檔頁的標題"
   },
   "theme.blog.archive.description": {
-    "message": "存档",
-    "description": "The page & hero description of the blog archive page"
+    "message": "存檔",
+    "description": "部落格存檔頁的描述"
   },
   "theme.blog.paginator.navAriaLabel": {
-    "message": "博客列表页面导航",
-    "description": "The ARIA label for the blog pagination"
+    "message": "部落格列表頁面導覽",
+    "description": "部落格分頁的 ARIA 標籤"
   },
   "theme.blog.paginator.newerEntries": {
-    "message": "更新的条目",
-    "description": "The label used to navigate to the newer blog posts page (previous page)"
+    "message": "較新的文章",
+    "description": "導向較新的文章頁（前一頁）的標籤"
   },
   "theme.blog.paginator.olderEntries": {
-    "message": "旧文章",
-    "description": "The label used to navigate to the older blog posts page (next page)"
+    "message": "較舊的文章",
+    "description": "導向較舊文章頁（下一頁）的標籤"
   },
   "theme.blog.post.paginator.navAriaLabel": {
-    "message": "博客文章页面导航",
-    "description": "The ARIA label for the blog posts pagination"
+    "message": "部落格文章頁面導覽",
+    "description": "文章分頁的 ARIA 標籤"
   },
   "theme.blog.post.paginator.newerPost": {
-    "message": "更新帖子",
-    "description": "The blog post button label to navigate to the newer/previous post"
+    "message": "較新的文章",
+    "description": "導向較新的文章的按鈕標籤"
   },
   "theme.blog.post.paginator.olderPost": {
-    "message": "较早的帖子",
-    "description": "The blog post button label to navigate to the older/next post"
+    "message": "較舊的文章",
+    "description": "導向較舊文章的按鈕標籤"
   },
   "theme.tags.tagsPageLink": {
-    "message": "查看所有标签",
-    "description": "The label of the link targeting the tag list page"
+    "message": "查看所有標籤",
+    "description": "檢視標籤列表頁的連結標籤"
   },
   "theme.colorToggle.ariaLabel": {
-    "message": "Switch between dark and light mode (currently {mode})",
-    "description": "The ARIA label for the navbar color mode toggle"
+    "message": "切換深色與淺色模式（目前為 {mode}）",
+    "description": "導覽列顏色模式切換的 ARIA 標籤"
   },
   "theme.colorToggle.ariaLabel.mode.dark": {
-    "message": "暗色模式",
-    "description": "The name for the dark color mode"
+    "message": "深色模式",
+    "description": "深色模式名稱"
   },
   "theme.colorToggle.ariaLabel.mode.light": {
-    "message": "亮色模式",
-    "description": "The name for the light color mode"
+    "message": "淺色模式",
+    "description": "淺色模式名稱"
   },
   "theme.docs.breadcrumbs.navAriaLabel": {
-    "message": "面包屑导航",
-    "description": "The ARIA label for the breadcrumbs"
+    "message": "麵包屑導覽",
+    "description": "麵包屑導航的 ARIA 標籤"
   },
   "theme.docs.DocCard.categoryDescription.plurals": {
-    "message": "1 item|{count} items",
-    "description": "The default description for a category card in the generated index about how many items this category includes"
+    "message": "1 個項目|{count} 個項目",
+    "description": "分類卡片中項目數量的描述"
   },
   "theme.docs.paginator.navAriaLabel": {
-    "message": "文档页面",
-    "description": "The ARIA label for the docs pagination"
+    "message": "文件頁面導覽",
+    "description": "文件分頁的 ARIA 標籤"
   },
   "theme.docs.paginator.previous": {
-    "message": "上一个",
-    "description": "The label used to navigate to the previous doc"
+    "message": "上一篇",
+    "description": "導向上一篇文件的標籤"
   },
   "theme.docs.paginator.next": {
-    "message": "下一个",
-    "description": "The label used to navigate to the next doc"
+    "message": "下一篇",
+    "description": "導向下一篇文件的標籤"
   },
   "theme.docs.versionBadge.label": {
-    "message": "Version: {versionLabel}"
+    "message": "版本：{versionLabel}",
+    "description": "顯示版本徽章的標籤"
   },
   "theme.docs.tagDocListPageTitle.nDocsTagged": {
-    "message": "One doc tagged|{count} docs tagged",
-    "description": "Pluralized label for \"{count} docs tagged\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} 篇文件已被標記",
+    "description": "「已標記文件數」的複數形式"
   },
   "theme.docs.tagDocListPageTitle": {
-    "message": "{nDocsTagged} with \"{tagName}\"",
-    "description": "The title of the page for a docs tag"
+    "message": "{nDocsTagged} 篇含「{tagName}」的文件",
+    "description": "文件標籤頁面的標題"
   },
   "theme.docs.versions.unreleasedVersionLabel": {
-    "message": "This is unreleased documentation for {siteTitle} {versionLabel} version.",
-    "description": "The label used to tell the user that he's browsing an unreleased doc version"
+    "message": "這是未發佈版本 {versionLabel} 的 {siteTitle} 文件。",
+    "description": "顯示正在瀏覽未發佈版本的提醒"
   },
   "theme.docs.versions.unmaintainedVersionLabel": {
-    "message": "This is documentation for {siteTitle} {versionLabel}, which is no longer actively maintained.",
-    "description": "The label used to tell the user that he's browsing an unmaintained doc version"
+    "message": "這是版本 {versionLabel} 的 {siteTitle} 文件，已停止維護。",
+    "description": "顯示正在瀏覽不再維護版本的提醒"
   },
   "theme.docs.versions.latestVersionSuggestionLabel": {
-    "message": "For up-to-date documentation, see the {latestVersionLink} ({versionLabel}).",
-    "description": "The label used to tell the user to check the latest version"
+    "message": "想查看最新文件，請參閱 {latestVersionLink}（{versionLabel}）。",
+    "description": "建議切換至最新版本的提示"
   },
   "theme.docs.versions.latestVersionLinkLabel": {
     "message": "最新版本",
-    "description": "The label used for the latest version suggestion link label"
+    "description": "最新版本連結的標籤"
   },
   "theme.common.editThisPage": {
-    "message": "编辑此页面",
-    "description": "The link label to edit the current page"
+    "message": "編輯此頁面",
+    "description": "用於編輯目前頁面的連結標籤"
   },
   "theme.common.headingLinkTitle": {
-    "message": "Direct link to {heading}",
-    "description": "Title for link to heading"
+    "message": "直接連結至 {heading}",
+    "description": "標題的直接連結名稱"
   },
   "theme.lastUpdated.atDate": {
-    "message": " on {date}",
-    "description": "The words used to describe on which date a page has been last updated"
+    "message": " 於 {date}",
+    "description": "顯示頁面最後更新日期"
   },
   "theme.lastUpdated.byUser": {
-    "message": " by {user}",
-    "description": "The words used to describe by who the page has been last updated"
+    "message": " 由 {user}",
+    "description": "顯示最後更新頁面的使用者"
   },
   "theme.lastUpdated.lastUpdatedAtBy": {
-    "message": "Last updated{atDate}{byUser}",
-    "description": "The sentence used to display when a page has been last updated, and by who"
+    "message": "最後更新{atDate}{byUser}",
+    "description": "顯示最後更新資訊句子"
   },
   "theme.NotFound.title": {
-    "message": "找不到页面",
-    "description": "The title of the 404 page"
+    "message": "找不到頁面",
+    "description": "404 頁面的標題"
   },
   "theme.navbar.mobileVersionsDropdown.label": {
     "message": "版本",
-    "description": "The label for the navbar versions dropdown on mobile view"
+    "description": "手機版導覽列的版本下拉選單標籤"
   },
   "theme.tags.tagsListLabel": {
-    "message": "标签：",
-    "description": "The label alongside a tag list"
+    "message": "標籤：",
+    "description": "標籤列表標題"
   },
   "theme.admonition.caution": {
     "message": "警告",
-    "description": "The default label used for the Caution admonition (:::caution)"
+    "description": "警告提示的預設標題"
   },
   "theme.admonition.danger": {
-    "message": "危险",
-    "description": "The default label used for the Danger admonition (:::danger)"
+    "message": "危險",
+    "description": "危險提示的預設標題"
   },
   "theme.admonition.info": {
-    "message": "信息",
-    "description": "The default label used for the Info admonition (:::info)"
+    "message": "資訊",
+    "description": "資訊提示的預設標題"
   },
   "theme.admonition.note": {
-    "message": "备注",
-    "description": "The default label used for the Note admonition (:::note)"
+    "message": "備註",
+    "description": "備註提示的預設標題"
   },
   "theme.admonition.tip": {
-    "message": "tip",
-    "description": "The default label used for the Tip admonition (:::tip)"
+    "message": "提示",
+    "description": "提示提示的預設標題"
   },
   "theme.admonition.warning": {
     "message": "警告",
-    "description": "The default label used for the Warning admonition (:::warning)"
+    "description": "警告提示的預設標題"
   },
   "theme.AnnouncementBar.closeButtonAriaLabel": {
-    "message": "关闭",
-    "description": "The ARIA label for close button of announcement bar"
+    "message": "關閉",
+    "description": "公告列關閉按鈕的 ARIA 標籤"
   },
   "theme.blog.sidebar.navAriaLabel": {
-    "message": "博客最近帖子导航",
-    "description": "The ARIA label for recent posts in the blog sidebar"
+    "message": "部落格最新文章導覽",
+    "description": "部落格側邊欄最新文章的 ARIA 標籤"
   },
   "theme.CodeBlock.wordWrapToggle": {
-    "message": "切换单词换行",
-    "description": "The title attribute for toggle word wrapping button of code block lines"
+    "message": "切換自動換行",
+    "description": "程式碼區塊自動換行按鈕的標題"
   },
   "theme.CodeBlock.copied": {
-    "message": "已复制",
-    "description": "The copied button label on code blocks"
+    "message": "已複製！",
+    "description": "程式碼區塊複製後的顯示文字"
   },
   "theme.CodeBlock.copyButtonAriaLabel": {
-    "message": "复制代码到剪贴板",
-    "description": "The ARIA label for copy code blocks button"
+    "message": "複製程式碼到剪貼簿",
+    "description": "程式碼複製按鈕的 ARIA 標籤"
   },
   "theme.CodeBlock.copy": {
-    "message": "复制",
-    "description": "The copy button label on code blocks"
+    "message": "複製",
+    "description": "程式碼區塊上的複製按鈕標籤"
   },
   "theme.DocSidebarItem.expandCategoryAriaLabel": {
-    "message": "Expand sidebar category '{label}'",
-    "description": "The ARIA label to expand the sidebar category"
+    "message": "展開側邊欄類別「{label}」",
+    "description": "展開側邊欄分類的 ARIA 標籤"
   },
   "theme.DocSidebarItem.collapseCategoryAriaLabel": {
-    "message": "Collapse sidebar category '{label}'",
-    "description": "The ARIA label to collapse the sidebar category"
+    "message": "收合側邊欄類別「{label}」",
+    "description": "收合側邊欄分類的 ARIA 標籤"
   },
   "theme.NavBar.navAriaLabel": {
-    "message": "主要的",
-    "description": "The ARIA label for the main navigation"
+    "message": "主導覽列",
+    "description": "導覽列的 ARIA 標籤"
   },
   "theme.NotFound.p1": {
-    "message": "我们找不到你想要的东西。",
-    "description": "The first paragraph of the 404 page"
+    "message": "我們找不到您要的內容。",
+    "description": "404 頁面的第一段說明"
   },
   "theme.NotFound.p2": {
-    "message": "请联系链接到原始URL的站点所有者并让他们知道他们的链接已经损坏。",
-    "description": "The 2nd paragraph of the 404 page"
+    "message": "請聯絡網址來源的網站管理員，告知他們連結出了問題。",
+    "description": "404 頁面的第二段說明"
   },
   "theme.navbar.mobileLanguageDropdown.label": {
-    "message": "语文",
-    "description": "The label for the mobile language switcher dropdown"
+    "message": "語言",
+    "description": "手機導覽列的語言切換下拉標籤"
   },
   "theme.TOCCollapsible.toggleButtonLabel": {
-    "message": "在本页",
-    "description": "The label used by the button on the collapsible TOC component"
+    "message": "本頁目錄",
+    "description": "可折疊目錄按鈕的標籤"
   },
   "theme.docs.breadcrumbs.home": {
-    "message": "主页",
-    "description": "The ARIA label for the home page in the breadcrumbs"
+    "message": "首頁",
+    "description": "麵包屑中的首頁標籤"
   },
   "theme.blog.post.readMore": {
-    "message": "阅读更多",
-    "description": "The label used in blog post item excerpts to link to full blog posts"
+    "message": "閱讀更多",
+    "description": "部落格文章摘要中的「閱讀更多」按鈕"
   },
   "theme.blog.post.readMoreLabel": {
-    "message": "Read more about {title}",
-    "description": "The ARIA label for the link to full blog posts from excerpts"
+    "message": "閱讀更多：{title}",
+    "description": "文章摘要中閱讀更多連結的 ARIA 標籤"
   },
   "theme.blog.post.readingTime.plurals": {
-    "message": "One min read|{readingTime} min read",
-    "description": "Pluralized label for \"{readingTime} min read\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{readingTime} 分鐘閱讀",
+    "description": "文章閱讀時間的複數標籤"
   },
   "theme.docs.sidebar.collapseButtonTitle": {
-    "message": "折叠侧边栏",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "收合側邊欄",
+    "description": "側邊欄收合按鈕的標題"
   },
   "theme.docs.sidebar.collapseButtonAriaLabel": {
-    "message": "折叠侧边栏",
-    "description": "The title attribute for collapse button of doc sidebar"
+    "message": "收合側邊欄",
+    "description": "側邊欄收合按鈕的 ARIA 標籤"
   },
   "theme.docs.sidebar.navAriaLabel": {
-    "message": "Docs sidebar",
-    "description": "The ARIA label for the sidebar navigation"
+    "message": "文件側邊欄",
+    "description": "文件側邊欄的導覽 ARIA 標籤"
   },
   "theme.docs.sidebar.closeSidebarButtonAriaLabel": {
-    "message": "关闭导航栏",
-    "description": "The ARIA label for close button of mobile sidebar"
+    "message": "關閉導覽欄",
+    "description": "手機上關閉側邊欄的 ARIA 標籤"
   },
   "theme.navbar.mobileSidebarSecondaryMenu.backButtonLabel": {
-    "message": "format@@0 返回主菜单",
-    "description": "The label of the back button to return to main menu, inside the mobile navbar sidebar secondary menu (notably used to display the docs sidebar)"
+    "message": "返回主選單",
+    "description": "手機側邊次功能選單的返回按鈕標籤"
   },
   "theme.docs.sidebar.toggleSidebarButtonAriaLabel": {
-    "message": "切换导航栏",
-    "description": "The ARIA label for hamburger menu button of mobile navigation"
+    "message": "切換導覽欄",
+    "description": "手機導覽中切換側邊欄的 ARIA 標籤"
   },
   "theme.docs.sidebar.expandButtonTitle": {
-    "message": "Expand sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "展開側邊欄",
+    "description": "側邊欄展開按鈕的標題"
   },
   "theme.docs.sidebar.expandButtonAriaLabel": {
-    "message": "Expand sidebar",
-    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+    "message": "展開側邊欄",
+    "description": "側邊欄展開按鈕的 ARIA 標籤"
   },
   "theme.SearchBar.seeAll": {
-    "message": "See all {count} results"
+    "message": "查看所有 {count} 筆結果",
+    "description": "搜尋列中「查看所有結果」的複數形式"
   },
   "theme.SearchBar.label": {
-    "message": "搜索",
-    "description": "The ARIA label and placeholder for search button"
+    "message": "搜尋",
+    "description": "搜尋按鈕的 ARIA 標籤與 placeholder"
   },
   "theme.SearchModal.searchBox.resetButtonTitle": {
-    "message": "清除查询",
-    "description": "The label and ARIA label for search box reset button"
+    "message": "清除查詢",
+    "description": "搜尋欄清除按鈕的標題"
   },
   "theme.SearchModal.searchBox.cancelButtonText": {
     "message": "取消",
-    "description": "The label and ARIA label for search box cancel button"
+    "description": "搜尋欄取消按鈕"
   },
   "theme.SearchModal.startScreen.recentSearchesTitle": {
-    "message": "最近的",
-    "description": "The title for recent searches"
+    "message": "最近搜尋",
+    "description": "搜尋模式啟始畫面的標題"
   },
   "theme.SearchModal.startScreen.noRecentSearchesText": {
-    "message": "没有最近的搜索",
-    "description": "The text when no recent searches"
+    "message": "沒有最近搜尋紀錄",
+    "description": "搜尋模式啟始畫面無紀錄時顯示的文字"
   },
   "theme.SearchModal.startScreen.saveRecentSearchButtonTitle": {
-    "message": "保存此搜索",
-    "description": "The label for save recent search button"
+    "message": "儲存此搜尋",
+    "description": "儲存最近搜尋的按鈕標題"
   },
   "theme.SearchModal.startScreen.removeRecentSearchButtonTitle": {
-    "message": "从历史记录中删除此搜索",
-    "description": "The label for remove recent search button"
+    "message": "從歷史記錄移除此搜尋",
+    "description": "移除最近搜尋的按鈕標題"
   },
   "theme.SearchModal.startScreen.favoriteSearchesTitle": {
-    "message": "收藏夹",
-    "description": "The title for favorite searches"
+    "message": "我的最愛",
+    "description": "搜尋模式最愛搜尋項目的標題"
   },
   "theme.SearchModal.startScreen.removeFavoriteSearchButtonTitle": {
-    "message": "从收藏夹中删除此搜索",
-    "description": "The label for remove favorite search button"
+    "message": "從最愛中移除此搜尋",
+    "description": "移除最愛搜尋的按鈕標題"
   },
   "theme.SearchModal.errorScreen.titleText": {
-    "message": "无法获取结果",
-    "description": "The title for error screen of search modal"
+    "message": "無法取得結果",
+    "description": "搜尋 Modal 錯誤畫面的標題"
   },
   "theme.SearchModal.errorScreen.helpText": {
-    "message": "您可能想要检查您的网络连接。",
-    "description": "The help text for error screen of search modal"
+    "message": "您可能想檢查您的網路連線。",
+    "description": "搜尋 Modal 錯誤畫面的說明"
   },
   "theme.SearchModal.footer.selectText": {
-    "message": "选择",
-    "description": "The explanatory text of the action for the enter key"
+    "message": "選擇",
+    "description": "搜尋 Modal 底部「Enter」鍵的說明"
   },
   "theme.SearchModal.footer.selectKeyAriaLabel": {
-    "message": "输入密钥",
-    "description": "The ARIA label for the Enter key button that makes the selection"
+    "message": "輸入鍵",
+    "description": "搜尋 Modal 底部 Enter 鍵的 ARIA 標籤"
   },
   "theme.SearchModal.footer.navigateText": {
-    "message": "导航",
-    "description": "The explanatory text of the action for the Arrow up and Arrow down key"
+    "message": "導覽",
+    "description": "搜尋 Modal 底部上下鍵的說明"
   },
   "theme.SearchModal.footer.navigateUpKeyAriaLabel": {
-    "message": "向上箭头",
-    "description": "The ARIA label for the Arrow up key button that makes the navigation"
+    "message": "向上箭頭",
+    "description": "搜尋 Modal 底部向上鍵的 ARIA 標籤"
   },
   "theme.SearchModal.footer.navigateDownKeyAriaLabel": {
-    "message": "向下箭头",
-    "description": "The ARIA label for the Arrow down key button that makes the navigation"
+    "message": "向下箭頭",
+    "description": "搜尋 Modal 底部向下鍵的 ARIA 標籤"
   },
   "theme.SearchModal.footer.closeText": {
-    "message": "关闭",
-    "description": "The explanatory text of the action for Escape key"
+    "message": "關閉",
+    "description": "搜尋 Modal 的 Escape 鍵說明"
   },
   "theme.SearchModal.footer.closeKeyAriaLabel": {
-    "message": "转义密钥",
-    "description": "The ARIA label for the Escape key button that close the modal"
+    "message": "Escape 鍵",
+    "description": "搜尋 Modal 的 Escape 鍵 ARIA 標籤"
   },
   "theme.SearchModal.footer.searchByText": {
-    "message": "搜索者",
-    "description": "The text explain that the search is making by Algolia"
+    "message": "由 Algolia 搜尋",
+    "description": "告知使用者這是由 Algolia 提供的搜尋"
   },
   "theme.SearchModal.noResultsScreen.noResultsText": {
-    "message": "没有结果",
-    "description": "The text explains that there are no results for the following search"
+    "message": "沒有結果",
+    "description": "搜尋 Modal 無結果時顯示的文字"
   },
   "theme.SearchModal.noResultsScreen.suggestedQueryText": {
-    "message": "尝试搜索",
-    "description": "The text for the suggested query when no results are found for the following search"
+    "message": "試試搜尋",
+    "description": "搜尋 Modal 建議關鍵字的文字"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsText": {
-    "message": "相信这个查询应该返回结果吗？",
-    "description": "The text for the question where the user thinks there are missing results"
+    "message": "覺得應該有結果嗎？",
+    "description": "搜尋 Modal 提問使用者是否漏結果"
   },
   "theme.SearchModal.noResultsScreen.reportMissingResultsLinkText": {
-    "message": "让我们知道吧。",
-    "description": "The text for the link to report missing results"
+    "message": "告訴我們吧。",
+    "description": "搜尋 Modal 的回報連結文字"
   },
   "theme.SearchModal.placeholder": {
-    "message": "搜索文档",
-    "description": "The placeholder of the input of the DocSearch pop-up modal"
+    "message": "搜尋文件",
+    "description": "DocSearch 模態框的 placeholder"
   },
   "theme.SearchPage.documentsFound.plurals": {
-    "message": "One document found|{count} documents found",
-    "description": "Pluralized label for \"{count} documents found\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "找到 1 筆文件|找到 {count} 筆文件",
+    "description": "搜尋結果文件數目的複數標籤"
   },
   "theme.SearchPage.existingResultsTitle": {
-    "message": "Search results for \"{query}\"",
-    "description": "The search page title for non-empty query"
+    "message": "「{query}」的搜尋結果",
+    "description": "搜尋非空結果時的頁面標題"
   },
   "theme.SearchPage.emptyResultsTitle": {
-    "message": "搜索文档",
-    "description": "The search page title for empty query"
+    "message": "搜尋文件",
+    "description": "搜尋空字串時的頁面標題"
   },
   "theme.SearchPage.inputPlaceholder": {
-    "message": "在此输入您的搜索",
-    "description": "The placeholder for search page input"
+    "message": "在此輸入您的搜尋",
+    "description": "搜尋頁面的 placeholder"
   },
   "theme.SearchPage.inputLabel": {
-    "message": "搜索",
-    "description": "The ARIA label for search page input"
+    "message": "搜尋",
+    "description": "搜尋頁面的 ARIA 標籤"
   },
   "theme.SearchPage.algoliaLabel": {
-    "message": "按Algolia搜索",
-    "description": "The ARIA label for Algolia mention"
+    "message": "以 Algolia 搜尋",
+    "description": "搜尋結果來源提示"
   },
   "theme.SearchPage.noResultsText": {
-    "message": "没有找到结果",
-    "description": "The paragraph for empty search result"
+    "message": "找不到結果",
+    "description": "搜尋結果為空時的文字"
   },
   "theme.SearchPage.fetchingNewResults": {
-    "message": "正在获取新结果...",
-    "description": "The paragraph for fetching new search results"
+    "message": "正在載入新結果...",
+    "description": "正在載入新搜尋結果時顯示的文字"
   },
   "theme.blog.post.plurals": {
-    "message": "One post|{count} posts",
-    "description": "Pluralized label for \"{count} posts\". Use as much plural forms (separated by \"|\") as your language support (see https://www.unicode.org/cldr/cldr-aux/charts/34/supplemental/language_plural_rules.html)"
+    "message": "{count} 篇文章",
+    "description": "部落格文章數量的複數形式"
   },
   "theme.blog.tagTitle": {
-    "message": "{nPosts} tagged with \"{tagName}\"",
-    "description": "The title of the page for a blog tag"
+    "message": "已標記「{tagName}」的文章，共 {nPosts} 篇",
+    "description": "部落格標籤頁面標題"
   },
   "theme.blog.author.pageTitle": {
-    "message": "{authorName} - {nPosts}",
-    "description": "The title of the page for a blog author"
+    "message": "{authorName} — {nPosts} 篇文章",
+    "description": "部落格作者頁面標題"
   },
   "theme.blog.authorsList.pageTitle": {
     "message": "作者",
-    "description": "The title of the authors page"
+    "description": "作者列表頁的標題"
   },
   "theme.blog.authorsList.viewAll": {
     "message": "查看所有作者",
-    "description": "The label of the link targeting the blog authors page"
+    "description": "導向作者列表頁的連結標籤"
   },
   "theme.blog.author.noPosts": {
-    "message": "此作者尚未写过任何文章。",
-    "description": "The text for authors with 0 blog post"
+    "message": "此作者尚未發布文章。",
+    "description": "當作者沒有文章時顯示的文字"
   },
   "theme.contentVisibility.unlistedBanner.title": {
-    "message": "未列出页面",
-    "description": "The unlisted content banner title"
+    "message": "未列出頁面",
+    "description": "隱藏頁面的橫幅標題"
   },
   "theme.contentVisibility.unlistedBanner.message": {
-    "message": "此页面未列出。搜索引擎不会索引它，只有拥有直接链接的用户才能访问它。",
-    "description": "The unlisted content banner message"
+    "message": "此頁面未列出。搜尋引擎不會索引它，只有擁有直接連結的使用者才能存取。",
+    "description": "未列出頁面的說明"
   },
   "theme.contentVisibility.draftBanner.title": {
-    "message": "页面草稿",
-    "description": "The draft content banner title"
+    "message": "頁面草稿",
+    "description": "草稿頁面的橫幅標題"
   },
   "theme.contentVisibility.draftBanner.message": {
-    "message": "此页面是草稿。它只会在开发版中可见并被排除在生产版本之外。",
-    "description": "The draft content banner message"
+    "message": "此頁面是草稿。僅在開發版可見，並不會包含在正式版本。",
+    "description": "草稿頁面的說明"
   },
   "theme.ErrorPageContent.tryAgain": {
-    "message": "再试一次",
-    "description": "The label of the button to try again rendering when the React error boundary captures an error"
+    "message": "再試一次",
+    "description": "當 React 錯誤邊界捕捉到錯誤時，重新渲染按鈕的標籤"
   },
   "theme.common.skipToMainContent": {
-    "message": "跳转到主要内容",
-    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+    "message": "跳轉到主要內容",
+    "description": "鍵盤導航可快速跳至主內容的標籤"
   },
   "theme.tags.tagsPageTitle": {
-    "message": "标签",
-    "description": "The title of the tag list page"
+    "message": "標籤",
+    "description": "標籤列表頁的標題"
   }
 }

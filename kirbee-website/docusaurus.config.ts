@@ -60,6 +60,8 @@ const config: Config = {
               'https://github.com/kirbeee/kirbeee',
         },
         blog: {
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -162,7 +164,6 @@ const config: Config = {
       },
       items: [
         {to: '/docs', label: 'Docs', position: 'left'},
-        {to: '/docs/project', label: 'Project', position: 'left'},
         {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/kirbeee',
@@ -194,19 +195,11 @@ const config: Config = {
         href: 'https://example.com',
       },
     },
-    // Declare some json-ld structured data
     {
       tagName: 'script',
       attributes: {
         type: 'application/ld+json',
-      },
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org/',
-        '@type': 'Organization',
-        name: 'Meta Open Source',
-        url: 'https://opensource.fb.com/',
-        logo: 'https://opensource.fb.com/img/logos/Meta-Open-Source.svg',
-      }),
+      }
     },
       ]
 };
