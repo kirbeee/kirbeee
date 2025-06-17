@@ -37,3 +37,13 @@ lyrics:
   label: Lyrics
   permalink: /lyrics
   description: Lyrics tag description
+
+marathon:
+  label: Marathon
+  permalink: /marathon
+  description: Marathon tag description
+
+hiking:
+  label: Hiking
+  permalink: /hiking
+  description: Hiking tag description
