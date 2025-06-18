@@ -1,22 +1,18 @@
 {
   "title": {
-    "message": "Sean網站",
+    "message": "Sean's website",
     "description": "The title in the navbar"
   },
   "logo.alt": {
-    "message": "我的網站標誌",
+    "message": "My Site Logo",
     "description": "The alt text of navbar logo"
   },
   "item.label.Docs": {
-    "message": "文件",
+    "message": "Docs",
     "description": "Navbar item with label Docs"
   },
-  "item.label.Project": {
-    "message": "專案",
-    "description": "導覽列項目，標籤為專案"
-  },
   "item.label.Blog": {
-    "message": "部落格",
+    "message": "Blog",
     "description": "Navbar item with label Blog"
   },
   "item.label.GitHub": {
