@@ -5,12 +5,13 @@ import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 import Translate, {translate} from "@docusaurus/core/lib/client/exports/Translate";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import styles from './index.module.css';
 
 function HomepageHeader() {
     const {siteConfig} = useDocusaurusContext();
     return (
+        <SpeedInsights>
         <header className={clsx('hero hero--primary', styles.heroBanner)}>
             <div className="container">
                 <Heading as="h1" className="hero__title">
@@ -27,6 +28,7 @@ function HomepageHeader() {
                 </Link>
             </div>
         </header>
+        </SpeedInsights>
     );
 }
 
