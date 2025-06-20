@@ -14,7 +14,7 @@ const config: Config = {
     url: 'https://kirbeee.dpdns.org',
     baseUrl: '/',
     organizationName: 'kirbeee', // Usually your GitHub org/user name.
-    projectName: 'kirbeee.github.io', // Usually your repo name.
+    projectName: 'kirbeee', // Usually your repo name.
     trailingSlash: false,
     deploymentBranch: "gh-pages",
 
@@ -48,15 +48,12 @@ const config: Config = {
             {
                 docs: {
                     sidebarPath: './sidebars.ts',
-                    routeBasePath: '/docs',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
                     editUrl:
                         'https://github.com/kirbeee/kirbeee',
                 },
                 blog: {
-                    blogSidebarTitle: 'All posts',
-                    blogSidebarCount: 'ALL',
                     showReadingTime: true,
                     feedOptions: {
                         type: ['rss', 'atom'],
@@ -109,117 +106,116 @@ const config: Config = {
         metadata: [
             {name: 'keywords', content: 'computer science, blog'},
         ],
-        headTags: [
-            // 預先連線到常用外部資源
-            {
-                tagName: 'link',
-                attributes: {
-                    rel: 'preconnect',
-                    href: 'https://fonts.gstatic.com',
-                    crossorigin: true,
-                },
-            },
-
-            // 網站 icon
-            {
-                tagName: 'link',
-                attributes: {
-                    rel: 'icon',
-                    href: '/img/favicon.ico',
-                },
-            },
-
-            // 網站描述（SEO 用）
-            {
-                tagName: 'meta',
-                attributes: {
-                    name: 'description',
-                    content: 'Sean網站，分享AWS學習筆記、爬山冒險、日本旅遊經驗與歌曲心得。',
-                },
-            },
-
-            // Open Graph（Facebook 等社群分享）
-            {
-                tagName: 'meta',
-                attributes: {
-                    property: 'og:title',
-                    content: 'Sean網站',
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    property: 'og:description',
-                    content: 'AWS 學習、爬山分享、日本旅遊與歌曲筆記。',
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    property: 'og:image',
-                    content: 'https://yourdomain.com/img/og-image.jpg', // <-- 換成你的封面圖網址
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    property: 'og:url',
-                    content: 'https://kirbeee.dpdns.org', // <-- 換成你的網站網址
-                },
-            },
-
-            // Twitter Card
-            {
-                tagName: 'meta',
-                attributes: {
-                    name: 'twitter:card',
-                    content: 'summary_large_image',
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    name: 'twitter:title',
-                    content: 'Sean網站',
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    name: 'twitter:description',
-                    content: 'AWS 學習、爬山分享、日本旅遊與歌曲筆記。',
-                },
-            },
-            {
-                tagName: 'meta',
-                attributes: {
-                    name: 'twitter:image',
-                    content: 'https://yourdomain.com/img/og-image.jpg', // <-- 換成你的封面圖網址
-                },
-            },
-
-            // 結構化資料 JSON-LD（Google 搜尋用）
-            {
-                tagName: 'script',
-                attributes: {
-                    type: 'application/ld+json',
-                },
-                innerHTML: `
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Sean",
-        "url": "https://kirbeee.dpdns.org",
-        "sameAs": [],
-        "description": "Sean分享AWS雲端學習筆記、登山心得與日本旅行音樂內容。",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://kirbeee.dpdns.org"
-        }
-      }
-    `,
-            },
-        ],
+    //     headTags: [
+    //         {
+    //             tagName: 'link',
+    //             attributes: {
+    //                 rel: 'preconnect',
+    //                 href: 'https://fonts.gstatic.com',
+    //                 crossorigin: true,
+    //             },
+    //         },
+    //
+    //         // 網站 icon
+    //         {
+    //             tagName: 'link',
+    //             attributes: {
+    //                 rel: 'icon',
+    //                 href: '/img/favicon.ico',
+    //             },
+    //         },
+    //
+    //         // 網站描述（SEO 用）
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 name: 'description',
+    //                 content: 'Sean網站，分享AWS學習筆記、爬山冒險、日本旅遊經驗與歌曲心得。',
+    //             },
+    //         },
+    //
+    //         // Open Graph（Facebook 等社群分享）
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 property: 'og:title',
+    //                 content: 'Sean網站',
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 property: 'og:description',
+    //                 content: 'AWS 學習、爬山分享、日本旅遊與歌曲筆記。',
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 property: 'og:image',
+    //                 content: 'https://yourdomain.com/img/og-image.jpg', // <-- 換成你的封面圖網址
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 property: 'og:url',
+    //                 content: 'https://kirbeee.dpdns.org', // <-- 換成你的網站網址
+    //             },
+    //         },
+    //
+    //         // Twitter Card
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 name: 'twitter:card',
+    //                 content: 'summary_large_image',
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 name: 'twitter:title',
+    //                 content: 'Sean網站',
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 name: 'twitter:description',
+    //                 content: 'AWS 學習、爬山分享、日本旅遊與歌曲筆記。',
+    //             },
+    //         },
+    //         {
+    //             tagName: 'meta',
+    //             attributes: {
+    //                 name: 'twitter:image',
+    //                 content: 'https://yourdomain.com/img/og-image.jpg', // <-- 換成你的封面圖網址
+    //             },
+    //         },
+    //
+    //         // 結構化資料 JSON-LD（Google 搜尋用）
+    //         {
+    //             tagName: 'script',
+    //             attributes: {
+    //                 type: 'application/ld+json',
+    //             },
+    //             innerHTML: `
+    //   {
+    //     "@context": "https://schema.org",
+    //     "@type": "Person",
+    //     "name": "Sean",
+    //     "url": "https://kirbeee.dpdns.org",
+    //     "sameAs": [],
+    //     "description": "Sean分享AWS雲端學習筆記、登山心得與日本旅行音樂內容。",
+    //     "mainEntityOfPage": {
+    //       "@type": "WebPage",
+    //       "@id": "https://kirbeee.dpdns.org"
+    //     }
+    //   }
+    // `,
+    //         },
+    //     ],
         algolia: {
             appId: process.env.REACT_APP_ALGOLIA_APP_ID,
             apiKey: process.env.REACT_APP_ALGOLIA_SEARCH_API_KEY,
@@ -273,7 +269,6 @@ const config: Config = {
             darkTheme: prismThemes.dracula,
         },
     } satisfies Preset.ThemeConfig,
-
 };
 
 export default config;

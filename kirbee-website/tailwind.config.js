@@ -1,32 +1,30 @@
-const { fontFamily } = require("tailwindcss/defaultTheme");
+import {fontFamily} from "tailwindcss/defaultTheme";
 
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  corePlugins: {
+export const corePlugins = {
     preflight: false,
     container: false,
-  },
-  darkMode: ["class", '[data-theme="dark"]'],
-  content: [
-      "./src/**/*.{jsx,tsx,html}",
-      "./docs/**/*.{mdx,md}",
-  ],
-  theme: {
-    extend: {
-      fontFamily: {
-        sans: ['"Inter"', ...fontFamily.sans],
-        jakarta: ['"Plus Jakarta Sans"', ...fontFamily.sans],
-        mono: ['"Fira Code"', ...fontFamily.mono],
-      },
-      borderRadius: {
-        sm: "4px",
-      },
-      screens: {
-        sm: "0px",
-        lg: "997px",
-      },
-      colors: {},
-    },
-  },
-  plugins: [],
 };
+export const darkMode = ["class", '[data-theme="dark"]'];
+export const content = [
+    "./src/**/*.{jsx,tsx,html}",
+    "./docs/**/*.{mdx,md}",
+];
+export const theme = {
+    extend: {
+        fontFamily: {
+            sans: ['"Inter"', ...fontFamily.sans],
+            jakarta: ['"Plus Jakarta Sans"', ...fontFamily.sans],
+            mono: ['"Fira Code"', ...fontFamily.mono],
+        },
+        borderRadius: {
+            sm: "4px",
+        },
+        screens: {
+            sm: "0px",
+            lg: "997px",
+        },
+        colors: {},
+    },
+};
+export const plugins = [];
