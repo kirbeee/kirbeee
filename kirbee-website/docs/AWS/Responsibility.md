@@ -1,3 +1,0 @@
-# Responsibility
-
-![Responsibility](./Responsiblity.png)
