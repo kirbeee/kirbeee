@@ -12,7 +12,7 @@ const CredlyBadge = () => {
     }, []);
 
     return (
-        <>
+        <div className="flex justify-center gap-8">
             <div
                 data-iframe-width="150"
                 data-iframe-height="270"
@@ -25,7 +25,7 @@ const CredlyBadge = () => {
                 data-share-badge-id="6c2802fa-8625-4f78-8afe-cf5ae899a2cc"
                 data-share-badge-host="https://www.credly.com"
             ></div>
-        </>
+        </div>
     );
 };
 
