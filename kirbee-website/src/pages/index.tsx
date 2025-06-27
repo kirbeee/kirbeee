@@ -13,9 +13,9 @@ const features = [
         description: 'Explore my professional journey, skills, and experiences.',
     },
     {
-        title: 'Publications',
-        link: '/publications',
-        description: 'Browse the academic papers and research I have authored.',
+        title: 'Papers',
+        link: '/docs/papers',
+        description: 'I have read papers on various topics including software engineering, AI, and more.',
     },
     {
         title: 'Blog',
@@ -31,7 +31,6 @@ export default function Home(): ReactNode {
             title={`Hello from ${siteConfig.title}`}
             description="Sean Lin's personal site – CV, research publications, blog posts, and more."
         >
-            {/* Hero */}
             <header className={clsx('hero', 'py-12 sm:py-20', styles.heroBanner)}>
                 <div className="container text-center">
                     <Heading as="h1" className="hero__title text-3xl sm:text-5xl">
@@ -41,7 +40,6 @@ export default function Home(): ReactNode {
             </header>
 
             <main>
-                {/* Features */}
                 <section className={styles.features}>
                     <div className="container">
                         <div className="flex flex-wrap justify-center gap-6">
@@ -61,8 +59,7 @@ export default function Home(): ReactNode {
                     </div>
                 </section>
 
-                {/* About */}
-                <section className={styles.aboutMe}>
+                <section className={styles.features}>
                     <div className="container max-w-2xl mx-auto px-4">
                         <h2 className="text-2xl sm:text-3xl mb-4">About Me</h2>
                         <p className="text-base leading-relaxed">
@@ -73,8 +70,7 @@ export default function Home(): ReactNode {
                     </div>
                 </section>
 
-                {/* Contact */}
-                <section className={styles.contact}>
+                <section className={styles.features}>
                     <div className="container max-w-md mx-auto px-4 text-center">
                         <h2 className="text-2xl sm:text-3xl mb-4">Get In Touch</h2>
                         <p>Email: <a href="mailto:pspsean1234@gmail.com" className="text-primary">pspsean1234@gmail.com</a></p>
