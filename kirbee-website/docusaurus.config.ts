@@ -34,7 +34,6 @@ const config: Config = {
             },
             'zh-TW': {
                 label: '繁體中文',
-                path: 'zh-TW',
             },
             'ja-JP': {
                 label: '日本語',
@@ -50,8 +49,6 @@ const config: Config = {
                     sidebarPath: './sidebars.ts',
                     showLastUpdateAuthor: true,
                     showLastUpdateTime: true,
-                    editUrl:
-                        'https://github.com/kirbeee/kirbeee',
                 },
                 blog: {
                     showReadingTime: true,

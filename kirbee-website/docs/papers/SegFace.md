@@ -36,4 +36,4 @@ In Face Long-Tail classes like accessoris: eyeglasses,earring, hats,necklaces
 ## Related Work
 ### Face Parsing
 ### Transformer
-[Link](./models/Transformer.md)
+[Link](models/Self-Attention.md)
