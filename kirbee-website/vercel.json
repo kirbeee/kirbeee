@@ -1,15 +1,4 @@
 {
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "index, follow"
-        }
-      ]
-    }
-  ],
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true
 }
