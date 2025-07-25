@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import { ReactNode } from 'react';
+import BucketList from "@site/src/components/BucketList";
 
 const features = [
     {
@@ -68,6 +69,10 @@ export default function Home(): ReactNode {
                             findings. Feel free to explore my work below!
                         </p>
                     </div>
+                </section>
+
+                <section className={styles.features}>
+                    <BucketList/>
                 </section>
 
                 <section className={styles.features}>
