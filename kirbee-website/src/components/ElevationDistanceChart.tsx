@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import mapboxgl from 'mapbox-gl';
 import {
     LineChart,
     Line,
@@ -8,9 +9,11 @@ import {
     Tooltip,
     ResponsiveContainer,
 } from 'recharts';
+import 'mapbox-gl/dist/mapbox-gl.css';
+
+mapboxgl.accessToken = 'pk.eyJ1Ijoic2VhbmxpbjIzNCIsImEiOiJjbHRwZ21mN3MwcjR4MmxxczY1dzRkcjV5In0.TMSQU5z28kxAC7SGytv1kw'; // 🔑 替換這裡
 
 interface GPXViewerProps {
-    /** GPX 檔案的公開 URL，例如放在 public/gpx/summoonlake.gpx */
     src: string;
 }
 interface Coord {
@@ -25,6 +28,8 @@ interface TrackData {
 
 export default function GPXViewer({ src }: GPXViewerProps) {
     const [trackData, setTrackData] = useState<TrackData>({ coords: [], chartData: [] });
+    const mapContainerRef = useRef<HTMLDivElement>(null);
+    const mapRef = useRef<mapboxgl.Map | null>(null);
 
     useEffect(() => {
         if (!src) return;
@@ -41,13 +46,12 @@ export default function GPXViewer({ src }: GPXViewerProps) {
                     ele: parseFloat(node.getElementsByTagName('ele')[0]?.textContent || '0'),
                 }));
 
-                // 計算累積距離與高度資料
                 let cumDist = 0;
                 const data: TrackData['chartData'] = [];
                 coords.forEach((curr, i) => {
                     if (i > 0) {
                         const prev = coords[i - 1];
-                        const R = 6371; // 地球半徑 km
+                        const R = 6371;
                         const dLat = (curr.lat - prev.lat) * (Math.PI / 180);
                         const dLon = (curr.lon - prev.lon) * (Math.PI / 180);
                         const a =
@@ -65,56 +69,73 @@ export default function GPXViewer({ src }: GPXViewerProps) {
             });
     }, [src]);
 
-    const { coords } = trackData;
-    if (coords.length === 0) return <p>Loading GPX data…</p>;
+    useEffect(() => {
+        if (trackData.coords.length === 0) return;
 
-    // 計算 SVG 與地圖背景參數
-    const lats = coords.map(c => c.lat);
-    const lons = coords.map(c => c.lon);
-    const minLat = Math.min(...lats);
-    const maxLat = Math.max(...lats);
-    const minLon = Math.min(...lons);
-    const maxLon = Math.max(...lons);
+        if (mapRef.current) {
+            mapRef.current.remove();
+        }
 
-    const viewWidth = 600;
-    const viewHeight = 300;
-    const padding = 10;
+        mapRef.current = new mapboxgl.Map({
+            container: mapContainerRef.current!,
+            style: 'mapbox://styles/mapbox/outdoors-v12',
+            center: [
+                trackData.coords[0].lon,
+                trackData.coords[0].lat
+            ],
+            zoom: 13,
+        });
 
-    // 使用公開的 staticmap 服務載入底圖
-    const mapUrl =
-        `https://staticmap.openstreetmap.de/staticmap.php?bbox=${minLon},${minLat},${maxLon},${maxLat}` +
-        `&size=${viewWidth}x${viewHeight}`;
+        mapRef.current.on('load', () => {
+            const geojson = {
+                type: 'Feature',
+                geometry: {
+                    type: 'LineString',
+                    coordinates: trackData.coords.map(c => [c.lon, c.lat]),
+                },
+            };
 
-    const points = coords
-        .map(c => {
-            const x = ((c.lon - minLon) / (maxLon - minLon)) * (viewWidth - 2 * padding) + padding;
-            const y =
-                viewHeight - (((c.lat - minLat) / (maxLat - minLat)) * (viewHeight - 2 * padding) + padding);
-            return `${x},${y}`;
-        })
-        .join(' ');
+            mapRef.current!.addSource('track', {
+                type: 'geojson',
+                data: geojson,
+            });
+
+            mapRef.current!.addLayer({
+                id: 'track-line',
+                type: 'line',
+                source: 'track',
+                layout: {
+                    'line-join': 'round',
+                    'line-cap': 'round',
+                },
+                paint: {
+                    'line-color': '#3b82f6',
+                    'line-width': 4,
+                },
+            });
+
+            const bounds = new mapboxgl.LngLatBounds();
+            trackData.coords.forEach(c => bounds.extend([c.lon, c.lat]));
+            mapRef.current!.fitBounds(bounds, { padding: 20 });
+        });
+    }, [trackData]);
+
+    const { chartData } = trackData;
 
     return (
         <div className="max-w-4xl mx-auto p-6 bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-lg">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">路線地圖與高度圖</h2>
 
             <div className="relative h-64 mb-6 rounded-lg overflow-hidden">
-                <img src={mapUrl} alt="Map background" className="absolute inset-0 w-full h-full object-cover" />
-                <svg
-                    className="relative w-full h-full"
-                    viewBox={`0 0 ${viewWidth} ${viewHeight}`}
-                    preserveAspectRatio="xMidYMid meet"
-                >
-                    <polyline points={points} fill="none" stroke="#3b82f6" strokeWidth={2} />
-                </svg>
+                <div ref={mapContainerRef} className="w-full h-full" />
             </div>
 
             <div style={{ width: '100%', height: 300 }}>
                 <ResponsiveContainer>
-                    <LineChart data={trackData.chartData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
+                    <LineChart data={chartData} margin={{ top: 20, right: 30, left: 0, bottom: 0 }}>
                         <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.2} />
-                        <XAxis dataKey="distance" name="距離 (km)" unit="km" axisLine={false} tickLine={false} tick={{ fill: '#334155' }} />
-                        <YAxis dataKey="elevation" name="高度 (m)" unit="m" axisLine={false} tickLine={false} tick={{ fill: '#334155' }} />
+                        <XAxis dataKey="distance" name="距離 (km)" unit="km" tick={{ fill: '#334155' }} />
+                        <YAxis dataKey="elevation" name="高度 (m)" unit="m" tick={{ fill: '#334155' }} />
                         <Tooltip contentStyle={{ backgroundColor: 'rgba(255,255,255,0.75)' }} itemStyle={{ color: '#1e293b' }} />
                         <Line type="monotone" dataKey="elevation" stroke="#3b82f6" strokeWidth={3} dot={false} />
                     </LineChart>
