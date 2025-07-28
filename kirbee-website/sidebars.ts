@@ -33,7 +33,7 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: 'category',
-      label: '🏃work out',
+      label: 'work out',
         collapsed: true,
         items: [
             {
