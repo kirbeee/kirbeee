@@ -1,6 +1,5 @@
 ---
-id: Weight Training
-title: 重訓
+title: weight training
 last_update:
    date: 2025-06-18
    author: Kirbee

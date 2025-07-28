@@ -14,9 +14,9 @@ const features = [
         description: 'Explore my professional journey, skills, and experiences.',
     },
     {
-        title: 'Papers',
-        link: '/docs/papers',
-        description: 'I have read papers on various topics including software engineering, AI, and more.',
+        title: 'Learn',
+        link: '/docs',
+        description: 'I have learn on various topics including software engineering, Machine Learning, and more.',
     },
     {
         title: 'Blog',
