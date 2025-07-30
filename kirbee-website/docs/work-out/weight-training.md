@@ -1,5 +1,5 @@
 ---
-title: exercise
+title: Weight Training 
 last_update:
    date: 2025-06-18
    author: Kirbee
