@@ -11,7 +11,7 @@ const config: Config = {
     favicon: 'img/favicon.ico',
 
     // GitHub pages deployment config.
-    url: 'https://kirbeee-kirbeees-projects.vercel.app',
+    url: 'https://kirbeee.dpdns.org',
     baseUrl: '/',
     organizationName: 'kirbeee', // Usually your GitHub org/user name.
     projectName: 'kirbeee', // Usually your repo name.
