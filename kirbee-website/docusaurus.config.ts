@@ -51,6 +51,8 @@ const config: Config = {
                     showLastUpdateTime: true,
                 },
                 blog: {
+                    blogSidebarCount: 'ALL',
+                    blogSidebarTitle: 'All posts',
                     showReadingTime: true,
                     feedOptions: {
                         type: ['rss', 'atom'],
