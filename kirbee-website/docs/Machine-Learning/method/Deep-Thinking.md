@@ -6,7 +6,7 @@ last_update:
    author: Kirbee
 ---
 ## What is Deep Thinking?
-- **深度不夠，長度來湊**
+>**深度不夠，長度來湊**
 
 Question -----> LLM -----> <think> thinking process </think> answer
 - `<think> ....... </think>` -> Verification , Explore , Planning

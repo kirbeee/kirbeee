@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
         >
             <header className={clsx('hero', 'py-12 sm:py-20', styles.heroBanner)}>
                 <div className="container text-center">
-                    <Heading as="h1" className="hero__title text-3xl sm:text-5xl">
+                    <Heading as="h1" className="hero__title w-full">
                         Welcome to Sean Lin's Space
                     </Heading>
                 </div>
@@ -43,11 +43,11 @@ export default function Home(): ReactNode {
             <main>
                 <section className={styles.features}>
                     <div className="container">
-                        <div className="flex flex-wrap justify-center gap-6">
+                        <div className="flex flex-wrap justify-center gap-6 sm:gap-2">
                             {features.map(({ title, link, description }) => (
                                 <div
                                     key={title}
-                                    className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+                                    className="w-full sm:w-4/5 md:w-1/2 lg:w-1/4"
                                 >
                                     <Link to={link} className={clsx(styles.card, 'block p-6')}>
                                         <h3 className="text-xl mb-2">{title}</h3>
@@ -61,13 +61,13 @@ export default function Home(): ReactNode {
                 </section>
 
                 <section className={styles.features}>
-                    <div className="container max-w-2xl mx-auto px-4">
+                    <div className="container flex justify-center text-center">
+                        <div className="w-full sm:w-4/5">
                         <h2 className="text-2xl sm:text-3xl mb-4">About Me</h2>
-                        <p className="text-base leading-relaxed">
-                            Hi, I’m Sean Lin, a passionate software engineer and researcher based in Taipei.
-                            I love building high-quality web applications, exploring new cultures, and publishing my
-                            findings. Feel free to explore my work below!
+                        <p className="text-l">
+                            Hi, I’m Sean Lin, a passionate software engineer and researcher!
                         </p>
+                        </div>
                     </div>
                 </section>
 
@@ -76,9 +76,9 @@ export default function Home(): ReactNode {
                 </section>
 
                 <section className={styles.features}>
-                    <div className="container max-w-md mx-auto px-4 text-center">
-                        <h2 className="text-2xl sm:text-3xl mb-4">Get In Touch</h2>
-                        <p>Email: <a href="mailto:pspsean1234@gmail.com" className="text-primary">pspsean1234@gmail.com</a></p>
+                    <div className="container max-w-md mx-auto px-4 text-centerv justify-center gap-6">
+                        <h2 className="text-2xl sm:text-3xl mb-4 text-center">Get In Touch</h2>
+                        <p className="text-center">Email: <a href="mailto:pspsean1234@gmail.com" className="text-primary">pspsean1234@gmail.com</a></p>
                     </div>
                 </section>
             </main>
