@@ -1,6 +1,7 @@
 ---
 id: Don't think too much
 title: Don't Think Too Much
+keywords: [Don't think too much, Reasoning length, Answer accuracy, Chain of Draft, O1-Pruner, L1]
 last_update:
    date: 2025-07-30
    author: Kirbee

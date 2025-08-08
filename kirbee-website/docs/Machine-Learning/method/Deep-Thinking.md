@@ -1,6 +1,7 @@
 ---
 id: Deep-Thinking
 title: Deep Thinking
+keywords: [Deep Thinking, LLM, Reasoning, Chain of Thought, CoT, Monte Carlo Tree Search, MCTS]
 last_update:
    date: 2025-07-29
    author: Kirbee
