@@ -1,9 +1,9 @@
 ---
 id: Why Big Data Matters
 title: Why Big Data Matters
-keywords:
+keywords: [big data, pretraining, scaling laws, deduplication]
 last_update:
-   date: 2025-07-18
+   date: 2025-08-13
    author: Kirbee
 ---
 ## Reference
