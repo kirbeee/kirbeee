@@ -27,4 +27,7 @@ last_update:
 - example: [台灣化LLM的實踐經驗分享 3 |Chat Vector—神奇的 LLM 積木](https://aqweteddy.medium.com/台灣化-llm-的實踐經驗分享-3-chat-vector-神奇的-llm-積木-be5aadd5c1c0)
 
 ## Task analogies
+- Task A : Task B = Task C : Task D
+- 在沒Task D 的情況下，可以用 Task A, B, C 來推論 Task D ，model 學會task D
+- Paper
 

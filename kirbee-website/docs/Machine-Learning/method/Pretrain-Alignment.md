@@ -47,7 +47,19 @@ Pre-train -> Supervised Fine-tuning -> RLHF
 
 #### DataSet Quality 重要性
 :::info 說明
-chatGPT may be effected the result 
+Textbook 是 chatGPT 生成的 may be effected the result 
 :::
 - [Textbooks Are All You Need](https://arxiv.org/pdf/2306.11644)
 
+### Rephrasing the Web
+- Paper: [Rephrasing the Web:
+  A Recipe for Compute and Data-Efficient Language Modeling](https://arxiv.org/abs/2401.16380)
+- 在有限算力，固定模型下應該看更多不同的資料
+- Paper: [Scaling Data-Constrained Language Models](https://arxiv.org/abs/2305.16264)
+- Paper: [Efficient Training of Self-Supervised Speech Foundation Models on a Compute Budget](https://arxiv.org/abs/2409.16295)
+
+### Alignment 的極限
+- Paper: [The False Promise of Imitating Proprietary LLMs](https://arxiv.org/abs/2305.15717)
+- Paper: [Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?](https://arxiv.org/abs/2405.05904)
+- Paper: [Learning or Self-aligning? Rethinking Instruction Fine-tuning](https://arxiv.org/abs/2402.18243)
+- 

@@ -16,7 +16,7 @@ Question -----> LLM -----> <think> thinking process </think> answer
 - Alpha Go 的思考過程是用 MCTS (Monte Carlo Tree Search)
 
 ### Test Time Scaling
-- 思考的越多結過會越好！
+- 思考的越多結果會越好！
 - Paper: [Scaling Scaling Laws with Board Games](https://arxiv.org/abs/2104.03113)
 
 ## Build Reasoning LLM Method
