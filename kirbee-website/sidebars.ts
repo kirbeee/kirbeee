@@ -52,7 +52,12 @@ const sidebars: SidebarsConfig = {
             dirName: 'Machine-Learning',
             }
             ]
-    }
+    },
+      {
+          type: 'doc',
+          label: '🎓Graduation Project',
+          id: 'graduation-project',
+      },
   ],
 };
 
