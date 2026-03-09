@@ -1,7 +1,9 @@
 ## Hi there 👋 My name is Sean! Nice to meet you
 
-<p align="center"> <img height="180" style="vertical-align:top;" src="https://github-readme-stats.vercel.app/api?username=kirbeee" alt="Sean's GitHub status" />
-  &nbsp;&nbsp; <img height="180" style="vertical-align:top;" src="https://github-readme-stats.vercel.app/api/top-langs/?username=kirbeee&layout=compact" alt="Top Langs" />
+<p align="center"> 
+  <img height="180" style="vertical-align:top;" src="https://kirbeee-ejft.vercel.app/api?username=kirbeee" alt="Sean's GitHub status" />
+  &nbsp;&nbsp; 
+  <img height="180" style="vertical-align:top;" src="https://kirbeee-ejft.vercel.app/api/top-langs/?username=kirbeee&layout=compact" alt="Top Langs" />
 </p>
 
 ---
