@@ -78,5 +78,37 @@
   "sidebar.docs.category.VPC & VPN": {
     "message": "VPC & VPN",
     "description": "The label for category VPC & VPN in sidebar docs"
+  },
+  "sidebar.docs.category.⚙️AWS": {
+    "message": "⚙️AWS",
+    "description": "The label for category ⚙️AWS in sidebar docs"
+  },
+  "sidebar.docs.category.🏃work out": {
+    "message": "🏃work out",
+    "description": "The label for category 🏃work out in sidebar docs"
+  },
+  "sidebar.docs.category.🤖Machine Learning": {
+    "message": "🤖Machine Learning",
+    "description": "The label for category 🤖Machine Learning in sidebar docs"
+  },
+  "sidebar.docs.category.method": {
+    "message": "method",
+    "description": "The label for category method in sidebar docs"
+  },
+  "sidebar.docs.category.models": {
+    "message": "models",
+    "description": "The label for category models in sidebar docs"
+  },
+  "sidebar.docs.category.paper": {
+    "message": "paper",
+    "description": "The label for category paper in sidebar docs"
+  },
+  "sidebar.docs.doc.💡intro": {
+    "message": "💡intro",
+    "description": "The label for the doc item 💡intro in sidebar docs, linking to the doc index"
+  },
+  "sidebar.docs.doc.🎓Graduation Project": {
+    "message": "🎓Graduation Project",
+    "description": "The label for the doc item 🎓Graduation Project in sidebar docs, linking to the doc graduation-project"
   }
 }

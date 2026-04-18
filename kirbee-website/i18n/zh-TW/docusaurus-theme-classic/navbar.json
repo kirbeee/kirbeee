@@ -1,8 +1,4 @@
 {
-  "title": {
-    "message": "Sean網站",
-    "description": "The title in the navbar"
-  },
   "logo.alt": {
     "message": "我的網站標誌",
     "description": "The alt text of navbar logo"

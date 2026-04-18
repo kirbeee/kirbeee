@@ -63,7 +63,7 @@ Question -----> LLM -----> <think> thinking process </think> answer
 - Paper: [ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search](https://arxiv.org/abs/2406.03816)
 - Paper: [Mutual Reasoning Makes Smaller LLMs Stronger Problem-Solvers](https://arxiv.org/abs/2408.06195)
 
-:::info
+:::[info]
 **Imitation Learning** and **Reinforcement Learning**  [Post-Training](./Post-Training%20&%20Forgetting) 的一種特例
 :::
 

@@ -4,8 +4,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import { ReactNode } from 'react';
-import BucketList from "@site/src/components/BucketList";
+import {ReactNode} from 'react';
+import Translate ,{translate} from "@docusaurus/Translate";
 
 const features = [
     {
@@ -25,60 +25,50 @@ const features = [
     },
 ];
 
+function HomepageHeader() {
+    const {siteConfig} = useDocusaurusContext();
+    return(
+        <header className={clsx(styles.heroBanner)}>
+            <Heading as="h1" className="hero__title">
+                <Translate id="homepage.title">Welcome to Sean Lin's Space</Translate>
+            </Heading>
+        </header>
+    )
+}
+
 export default function Home(): ReactNode {
-    const { siteConfig } = useDocusaurusContext();
+    const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
             title={`Hello from ${siteConfig.title}`}
             description="Sean Lin's personal site – CV, research publications, blog posts, and more."
         >
-            <header className={clsx('hero', 'py-12 sm:py-20', styles.heroBanner)}>
-                <div className="container text-center">
-                    <Heading as="h1" className="hero__title w-full">
-                        Welcome to Sean Lin's Space
-                    </Heading>
-                </div>
-            </header>
+            <HomepageHeader/>
 
             <main>
                 <section className={styles.features}>
+                    {/* 加入 container 確保內容在大螢幕時不會無限展開，並保持水平置中 */}
                     <div className="container">
-                        <div className="flex flex-wrap justify-center gap-6 sm:gap-2">
-                            {features.map(({ title, link, description }) => (
-                                <div
-                                    key={title}
-                                    className="w-full sm:w-4/5 md:w-1/2 lg:w-1/4"
-                                >
-                                    <Link to={link} className={clsx(styles.card, 'block p-6')}>
-                                        <h3 className="text-xl mb-2">{title}</h3>
-                                        <p className="text-sm mb-4">{description}</p>
-                                        <span className="text-primary font-medium">Learn more →</span>
+                        {/* 使用 row 讓子元素可以水平排列 */}
+                        <div className="row">
+                            {features.map(({title, link, description}) => (
+                                <div key={title} className={clsx('col col--4')}>
+                                    <Link to={link} className={clsx('card', styles.featureCard)}>
+                                        <div className="card__header">
+                                            <h3>{title}</h3>
+                                        </div>
+                                        <div className="card__body">
+                                            <p>{description}</p>
+                                        </div>
+                                        <div className="card__footer">
+                                            <span className="button button--secondary button--block">
+                                                Learn more →
+                                            </span>
+                                        </div>
                                     </Link>
                                 </div>
                             ))}
                         </div>
-                    </div>
-                </section>
-
-                <section className={styles.features}>
-                    <div className="container flex justify-center text-center">
-                        <div className="w-full sm:w-4/5">
-                        <h2 className="text-2xl sm:text-3xl mb-4">About Me</h2>
-                        <p className="text-l">
-                            Hi, I’m Sean Lin, a passionate software engineer and researcher!
-                        </p>
-                        </div>
-                    </div>
-                </section>
-
-                <section className={styles.features}>
-                    <BucketList/>
-                </section>
-
-                <section className={styles.features}>
-                    <div className="container max-w-md mx-auto px-4 text-centerv justify-center gap-6">
-                        <h2 className="text-2xl sm:text-3xl mb-4 text-center">Get In Touch</h2>
-                        <p className="text-center">Email: <a href="mailto:pspsean1234@gmail.com" className="text-primary">pspsean1234@gmail.com</a></p>
                     </div>
                 </section>
             </main>

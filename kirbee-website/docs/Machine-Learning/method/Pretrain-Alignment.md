@@ -46,7 +46,7 @@ Pre-train -> Supervised Fine-tuning -> RLHF
 - [The FineWeb Datasets](https://arxiv.org/abs/2406.17557)
 
 #### DataSet Quality 重要性
-:::info 說明
+:::[info] 說明
 Textbook 是 chatGPT 生成的 may be effected the result 
 :::
 - [Textbooks Are All You Need](https://arxiv.org/pdf/2306.11644)

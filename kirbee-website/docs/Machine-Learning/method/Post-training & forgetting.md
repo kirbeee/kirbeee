@@ -41,7 +41,7 @@ LLM = foundation model ---(Post-Training = continual training = Alignment )---->
    - Output: new
    - Paper: [Selective Self-Rehearsal: A Fine-Tuning Approach to Improve Generalization in Large Language Models](https://arxiv.org/abs/2409.04787)
 
-:::info
+:::[info]
 可能RL-based post training ( less forgetting? )
 :::
 

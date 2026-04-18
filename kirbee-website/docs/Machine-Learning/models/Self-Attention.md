@@ -17,7 +17,7 @@ last_update:
 2. N -> model -> 1  (e.g. classification)
 3. N -> model -> N' (e.g. translation) = Sequence to Sequence(Seq2Seq)
 
-:::info 說明
+:::[info] 說明
 以下的資訊都是針對N -> model -> N' (Seq2Seq)的情況
 :::
 ### Relevant 

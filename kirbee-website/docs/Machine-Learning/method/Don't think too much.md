@@ -11,7 +11,7 @@ last_update:
 - Paper: [Revisiting the Test-Time Scaling of o1-like Models](https://arxiv.org/abs/2502.12215)
 - reasoning length ⬆️, answer accuracy ⬇️ => Question difficulty ⬆️ , reasoning length ⬆️, answer accuracy ⬇️ ????
 
-:::info
+:::[info]
 The four methods are compared with [Deep Thinking](./Deep-Thinking.md)
 :::
 

@@ -5,7 +5,7 @@ import 'dotenv/config'
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-    title: 'Sean website',
+    title: 'Sean Space',
     tagline: 'Computer Science student at the University, sharing my thoughts and projects',
     favicon: 'img/favicon.ico',
 
@@ -124,7 +124,7 @@ const config: Config = {
             insights: false,
         },
         navbar: {
-            title: 'Sean\'s website',
+            title: 'Sean\'s Space',
             logo: {
                 alt: 'My Site Logo',
                 src: 'img/logo.svg',
