@@ -10,7 +10,7 @@ const config: Config = {
     favicon: 'img/favicon.ico',
 
     // GitHub pages deployment config.
-    url: 'https://seanlinlog.org',
+    url: 'https://seanlinlog.com',
     baseUrl: '/',
     organizationName: 'kirbeee', // Usually your GitHub org/user name.
     projectName: 'kirbeee', // Usually your repo name.
